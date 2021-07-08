@@ -2,6 +2,10 @@
 
 body {
   font-family: "Gilroy", Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
 }
