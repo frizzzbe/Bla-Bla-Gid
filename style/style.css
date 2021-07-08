@@ -1,0 +1,7 @@
+@import url("../font/stylesheet.css");
+
+body {
+  font-family: "Gilroy", Verdana, Geneva, sans-serif;
+  margin: 0;
+  padding: 0;
+}
