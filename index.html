@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bla Bla Gid</title>
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  
+  <header class="main-header wrapper">
+    <div class="header-burger"></div>
+    <a href="#" class="header-logo">
+      <img src="./img/logo.png" alt="Логотип компании">
+    </a>
+  </header>
+  <main class="main-content wrapper">
+    <h1 class="main-heading">Добавление экскурсии</h1>
+    <!-- класс "key-block-hide--closed" для section переворачивает стрелку -->
+    <section class="key-block key-block-hide ">
+      <button class="hide-block"></button>
+      <h2 class="block-heading block-heading-question">Общая информация</h2>
+
+      <h3 class="sub-head">Название экскурсии</h3>
+      <input type="text" name="title" id="title" placeholder="Введите название">
+
+      <h3 class="sub-head">Описание экскурсии</h3>
+      <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
+      <div class="area-counter"><span class="counter-current">0</span>/5000</div>
+
+      <input type="checkbox" name="momental" id="momental">
+      <label class="momental-label" for="momental">Моментальное бронирование</label>
+      <input type="checkbox" name="request" id="request">
+      <label for="request">Запрос экскурсии</label>
+      
+      <h3 class="sub-head">Откуда</h3>
+      <div class="address-input">
+        <input type="text" name="from" id="from" placeholder="Введите адрес">
+      </div>
+      <a href="#" class="show-map">Показать на карте</a>
+      <h3 class="sub-head">Куда</h3>
+      <div class="address-input">
+        <input type="text" name="where" id="where" placeholder="Введите адрес">
+      </div>
+      <a href="#" class="show-map">Показать на карте</a>
+
+      <input type="checkbox" name="one-city" id="one-city">
+      <label for="one-city">Проходит в одном городе</label>
+
+      <h3 class="sub-head">Города в пути</h3>
+      
+    </section>
+  </main>
+  <!-- <div class="select" for="slct">
+    <select name="slct" id="slct">
+      <option selected disabled>Choose a country</option>
+      <option>Lorem</option>
+      <option>Ipsum</option>
+      <option>Dolor</option>
+    </select>
+  </div> -->
 </body>
 </html>

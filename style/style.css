@@ -1,6 +1,12 @@
 @import url("../font/stylesheet.css");
 
 body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
   font-family: "Gilroy", Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -9,3 +15,323 @@ body {
   margin: 0;
   padding: 0;
 }
+
+a {
+  font-size: 12px;
+  line-height: 20px;
+  color: #443296;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #443296;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #443296;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #171932;
+}
+
+input[type="text"] {
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+}
+
+input[type="text"]::placeholder {
+  color: #828282;
+}
+
+textarea {
+  width: 100%;
+  height: 138px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+textarea::placeholder {
+  color: #828282;
+}
+
+textarea::-webkit-resizer{
+  background: url('../img/resizer.svg') no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  height: 26px;
+  margin-top: 8px;
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 1.9em;
+  color: #000000;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #2D3161;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #2D3161;
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+}
+
+.wrapper {
+  width: 91%;
+  margin: 0 auto;
+}
+
+.main-header {
+  position: relative;
+  height: 40px;
+  align-items: center;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-burger {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  padding: 12px 9px;
+  background: #443296;
+  border-radius: 14px;
+  background-image: url('../img/burger-menu.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 16px;
+}
+
+.header-logo img {
+  display: block;
+}
+
+.main-content {
+  margin-top: 24px;
+}
+
+.main-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #443296;
+}
+
+.key-block {
+  position: relative;
+  margin-top: 24px;
+  padding: 32px 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.hide-block {
+  display: none;
+  border: none;
+  background: none;
+}
+
+.key-block-hide .hide-block {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/arrow.svg');
+  top: 32px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.key-block-hide--closed .hide-block {
+  transform: rotate(180deg);
+}
+
+.block-heading {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+  max-width: 75%;
+}
+
+.block-heading-question::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/question.svg');
+  background-size: cover;
+  bottom: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sub-head {
+  margin-top: 16px;
+}
+
+.area-counter {
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  color: #828282;
+}
+
+.area-counter span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.momental-label::after {
+  content: "";
+  margin-left: 11px;
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  top: 25%;
+  background: url('../img/zip.svg');
+}
+
+.address-input {
+  position: relative;
+}
+
+.address-input input{
+  padding: 8px 44px;
+  padding-right: 0;
+}
+
+.address-input::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url('../img/map-pin.svg');
+  top: 9px;
+  left: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  font-size: 1.2em;
+  background: #00f;
+  background-image: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 40%;
+  max-width: 400px;
+  min-width: 260px;
+  margin: 50px auto;
+  height: 65px;
+  line-height: 3;
+  background: #00f;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select {
+  flex: 1;
+  padding: 0 25px;
+  color: azure;
+  cursor: pointer;
+}
+
+option:hover{
+  filter: hue-rotate(190deg);
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  border-radius: 5px;
+  padding: 0 1em;
+  background: #fff;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.select:hover::after {
+  color: rgb(255, 99, 132);
+} */
