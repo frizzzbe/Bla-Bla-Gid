@@ -118,6 +118,54 @@ input[type="checkbox"]:checked + label::before {
   background-position: center;
 }
 
+.multi-pick {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px 16px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.multi-pick-item {
+  position: relative;
+  font-size: 9px;
+  line-height: 10px;
+  color: #171932;
+  border: 0.5px solid #2D3161;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 4px 18px 4px 6px;
+}
+
+.multi-pick-item::after {
+  content: "";
+  position: absolute;
+  margin-left: 2px;
+  display: block;
+  background: url('../img/close-pick.svg');
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  right: 6px;
+}
+
+.pick-add {
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #2D3161;
+  border-radius: 4px;
+}
+
+.pick-add::after {
+  background: url('../img/add-pick.svg');
+}
+
+
 .wrapper {
   width: 91%;
   margin: 0 auto;
