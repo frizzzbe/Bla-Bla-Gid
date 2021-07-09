@@ -19,7 +19,7 @@
     <!-- класс "key-block-hide--closed" для section переворачивает стрелку -->
     <section class="key-block key-block-hide ">
       <button class="hide-block"></button>
-      <h2 class="block-heading block-heading-question">Общая информация</h2>
+      <h2 class="block-heading heading-question">Общая информация</h2>
 
       <h3 class="sub-head">Название экскурсии</h3>
       <input type="text" name="title" id="title" placeholder="Введите название">
@@ -52,6 +52,63 @@
         <button class="pick-add multi-pick-item" type="button">Добавить</button>
         <div class="multi-pick-item">Воронеж</div>
         <div class="multi-pick-item">Сочи</div>
+      </div>
+      
+      <h3 class="sub-head">Место встречи</h3>
+      <div class="address-input">
+        <input type="text" name="meet" id="meet" placeholder="Введите место встречи">
+      </div>
+      <a href="#" class="show-map">Показать на карте</a>
+      
+      <h3 class="sub-head heading-question">Фотографии экскурсии</h3>
+      <div class="photos-excursion">
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/image.jpg" alt="Фото экскурсии">
+          </div>
+          <p class="image-title">Photo.jpg</p>
+          <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+        <div class="img-item">
+          <div class="image-object"></div>
+        </div>
+      </div>
+      <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
+      <div class="load-images">
+        <input type="file" name="photos" id="photos">
+        <label class="load-photos" for="photos">Загрузить фотографии</label>
+        <input type="file" name="cover" id="cover">
+        <label class="load-cover" for="cover">Загрузить обложку</label>
       </div>
     </section>
   </main>
