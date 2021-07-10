@@ -654,6 +654,14 @@ input[id="radio-2"]:checked ~ .glider {
   justify-content: center;
 }
 
+.banner {
+  margin: 44px;
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 24px;
+  color: #171932;
+}
+
 /* select {
   -webkit-appearance: none;
   -moz-appearance: none;
