@@ -84,10 +84,28 @@ textarea::placeholder {
 }
 
 textarea::-webkit-resizer{
+  display: none;
+}
+
+::-moz-resizer { 
+  display: none;
+}
+
+.area-wrapper {
+  position: relative;
+  display: block;
+}
+.area-wrapper::after {
+  content: "";
+  display: block;
   background: url('../img/resizer.svg') no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  pointer-events: none;
 }
 
 input[type="checkbox"] {
@@ -114,6 +132,7 @@ input[type="checkbox"] + label::before {
   height: 24px;
   border: 1px solid #2D3161;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -146,6 +165,7 @@ input[type="checkbox"]:checked + label::before {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 4px 18px 4px 6px;
+  cursor: pointer;
 }
 
 .multi-pick-item::after {
@@ -171,6 +191,113 @@ input[type="checkbox"]:checked + label::before {
   background: url('../img/add-pick.svg');
 }
 
+.tabs {
+  width: 100%;
+  max-width: 279px;
+  height: 40px;
+  margin: 16px auto;
+  display: flex;
+  position: relative;
+  background-color: #DBDFFA;
+  border-radius: 32px;
+}
+.tabs * {
+  z-index: 2;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: color 0.15s ease-in;
+  transition: color 0.15s ease-in;
+  color: #443296;
+}
+
+input[type="radio"]:checked + label {
+  color: #F7F7FC;
+}
+/* input[type="radio"]:checked + label > .notification {
+  background-color: #443296;
+  color: #fff;
+} */
+
+input[id="radio-1"]:checked ~ .glider {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+input[id="radio-2"]:checked ~ .glider {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.glider {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  background-color: #443296;
+  z-index: 1;
+  border-radius: 99px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+
+.btn {
+  display: block;
+  width: auto;
+  background-color: #2D3161;
+  border-radius: 8px;
+
+  margin: 0 auto;
+  padding: 6px 20px;
+
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: #443296;
+}
+
+.btn:active {
+  background-color: #DBDFFA;
+}
+
+.btn:disabled {
+  background-color: #E0E0E0;
+}
+
+.btn-gray {
+  background-color: #F2F2F2;
+  color: #2D3161;
+}
+.btn-gray:hover {
+  background-color: #dbdbdb;
+}
+
+/* common styles */
 
 .wrapper {
   width: 91%;
@@ -251,6 +378,10 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
   margin-bottom: 8px;
   max-width: 75%;
+}
+
+.block-parameters .block-heading {
+  margin-bottom: 0;
 }
 
 .heading-question::after {
@@ -362,6 +493,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 8px;
   line-height: 10px;
   color: #EB5757;
+  cursor: pointer;
 }
 
 .excursion-tip {
@@ -396,6 +528,7 @@ input[type="checkbox"]:checked + label::before {
   line-height: 20px;
   color: #FFFFFF;
   text-align: center;
+  cursor: pointer;
 }
 
 .load-photos::after {
@@ -422,9 +555,61 @@ input[type="checkbox"]:checked + label::before {
   line-height: 20px;
   color: #2D3161;
   text-align: center;
+  cursor: pointer;
 }
 
 
+.counter {
+  display: flex;
+  justify-content: center;
+  margin: 8px auto;
+}
+
+.counter-value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  align-self: center;
+  color: #14142B;
+}
+
+
+.counter-btn {
+  display: block;
+  background-size: 8px;
+  width: 40px;
+  height: 40px;
+  margin: 0 16px;
+  border-radius: 50%;
+}
+
+.counter-btn--dist {
+  background-image: url('../img/counter-dist.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.counter-btn--add {
+  background-image: url('../img/counter-add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.members-count {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 16px auto;
+}
+
+.members-count .counter-btn {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 
 
 /* select {

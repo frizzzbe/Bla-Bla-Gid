@@ -25,7 +25,9 @@
       <input type="text" name="title" id="title" placeholder="Введите название">
 
       <h3 class="sub-head">Описание экскурсии</h3>
-      <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
+      <div class="area-wrapper">
+        <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
+      </div>
       <div class="area-counter"><span class="counter-current">0</span>/5000</div>
 
       <input type="checkbox" name="momental" id="momental">
@@ -105,11 +107,41 @@
       </div>
       <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
       <div class="load-images">
-        <input type="file" name="photos" id="photos">
+        <input type="file" name="photos" id="photos" accept=".png,.jpg,.jpeg">
         <label class="load-photos" for="photos">Загрузить фотографии</label>
-        <input type="file" name="cover" id="cover">
+        <input type="file" name="cover" id="cover" accept=".png,.jpg,.jpeg">
         <label class="load-cover" for="cover">Загрузить обложку</label>
       </div>
+    </section>
+
+    <section class="key-block key-block-hide block-parameters">
+      <button class="hide-block"></button>
+      <h2 class="block-heading heading-question">Состав группы</h2>
+
+      <h3 class="sub-head">Выберите параметры экскурсии</h3>
+      <div class="tabs">
+        <input type="radio" id="radio-1" name="tabs" value="whole" checked />
+        <label class="tab" for="radio-1">Групповая</label>
+        <input type="radio" id="radio-2" name="tabs"  value="today"/>
+        <label class="tab" for="radio-2">Индивидуальная</label>
+        <span class="glider"></span>
+      </div>
+      
+      <h3 class="sub-head">Количество участников</h3>
+      <div class="counter">
+        <button class="btn btn-gray counter-btn counter-btn--dist" type="button"></button>
+        <span class="counter-value">10</span>
+        <button class="btn counter-btn counter-btn--add" type="button"></button>
+      </div>
+      <div class="members-count">
+        <button class="btn counter-btn" type="button">10</button>
+        <button class="btn btn-gray counter-btn" type="button">20</button>
+        <button class="btn btn-gray counter-btn" type="button">30</button>
+        <button class="btn btn-gray counter-btn" type="button">50</button>
+        <button class="btn btn-gray counter-btn" type="button">70</button>
+        <button class="btn btn-gray counter-btn" type="button">100</button>
+      </div>
+      <button class="btn counter-any" type="button">Любой</button>
     </section>
   </main>
   <!-- <div class="select" for="slct">
