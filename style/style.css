@@ -840,7 +840,7 @@ input[id="radio-2"]:checked ~ .glider {
 }
 
 .transportation .img-item {
-  width: 72px;
+  width: 70px;
   cursor: pointer;
 }
 
@@ -849,7 +849,7 @@ input[id="radio-2"]:checked ~ .glider {
 }
 
 .transportation .image-object {
-  height: 72px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
