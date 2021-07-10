@@ -517,6 +517,7 @@ input[id="radio-2"]:checked ~ .glider {
 }
 
 .load-images {
+  max-width: 310px;
   margin-top: 16px;
   display: flex;
   gap: 8px;
