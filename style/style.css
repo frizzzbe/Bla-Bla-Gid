@@ -297,6 +297,20 @@ input[id="radio-2"]:checked ~ .glider {
   background-color: #dbdbdb;
 }
 
+.btn-default {
+  border: 1px solid #F2F2F2;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #fff;
+  padding: 6px 0;
+}
+
+.btn-default:hover {
+  background-color: #F2F2F2;
+}
+
 /* common styles */
 
 .wrapper {
@@ -603,7 +617,7 @@ input[id="radio-2"]:checked ~ .glider {
 }
 
 .members-count .counter-btn {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 14px;
   line-height: 24px;
   padding: 0;
@@ -611,6 +625,34 @@ input[id="radio-2"]:checked ~ .glider {
   text-align: center;
 }
 
+.members-age {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.members-age .counter-btn {
+  /* width: 50%; */
+  flex-basis: 48%;
+  font-weight: 600;
+  color: #2D3161;
+  border-radius: 8px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.counter-any {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 8px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* select {
   -webkit-appearance: none;
