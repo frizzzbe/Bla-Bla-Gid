@@ -63,7 +63,7 @@
       <a href="#" class="show-map">Показать на карте</a>
       
       <h3 class="sub-head heading-question">Фотографии экскурсии</h3>
-      <div class="photos-excursion">
+      <div class="horisont-scroll">
         <div class="img-item">
           <div class="image-object">
             <img src="./img/image.jpg" alt="Фото экскурсии">
@@ -162,6 +162,129 @@
     <section class="key-block">
       <div class="banner">Баннер</div>
     </section>
+
+    <section class="key-block key-block-hide ">
+      <button class="hide-block"></button>
+      <h2 class="block-heading heading-question">Параметры экскурсии</h2>
+
+      <h3 class="sub-head">Сложность экскурсии</h3>
+      <div class="select diff-select">
+        <input type="radio" name="option">
+        <i class="toggle icon icon-arrow-down"></i>
+        <i class="toggle icon icon-arrow-up"></i>
+        <span class="placeholder">Выберите сложность</span>
+        <label class="option">
+          <input type="radio" name="option">
+          <span class="title">Легко</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option">
+          <span class="title">Средне</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option">
+          <span class="title">Сложно</span>
+        </label>
+      </div>
+      
+      <h3 class="sub-head">Способ передвижения</h3>
+      <!-- <div class="transportation">
+        <div class="transportation-item">
+
+        </div>
+      </div> -->
+      <div class="transportation horisont-scroll">
+        <div class="img-item img-item--select">
+          <div class="image-object">
+            <img src="./img/transport-1.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Пешком</p>
+        </div>
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/transport-2.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Машина</p>
+        </div>
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/transport-3.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Велосипед</p>
+        </div>
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/transport-4.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Мотоцикл</p>
+        </div>
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/transport-5.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Автобус</p>
+        </div>
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/transport-6.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Самолет</p>
+        </div>
+        <div class="img-item">
+          <div class="image-object">
+            <img src="./img/transport-7.svg" alt="Иконка транспорта">
+          </div>
+          <p class="image-title">Корабль</p>
+        </div>
+      </div>
+
+      <h3 class="sub-head">Какое расстояние пройдут участники?</h3>
+      <input type="text" name="distant" id="distant" placeholder="Введите расстояние в км">
+
+      <h3 class="sub-head">Проживание</h3>
+      <div class="select diff-select">
+        <input type="radio" name="option">
+        <i class="toggle icon icon-arrow-down"></i>
+        <i class="toggle icon icon-arrow-up"></i>
+        <span class="placeholder">Нет</span>
+        <label class="option">
+          <input type="radio" name="option">
+          <span class="title">Есть</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option">
+          <span class="title">Нет</span>
+        </label>
+      </div>
+
+      
+      <h3 class="sub-head">Язык экскурсии</h3>
+      <div class="multi-pick">
+        <button class="pick-add multi-pick-item" type="button">Добавить</button>
+        <div class="multi-pick-item">Русский</div>
+        <div class="multi-pick-item">English</div>
+      </div>
+      <h3 class="sub-head">Категория экскурсии</h3>
+      <div class="multi-pick">
+        <button class="pick-add multi-pick-item" type="button">Добавить</button>
+        <div class="multi-pick-item">Экскурсиооный тур</div>
+      </div>
+      <h3 class="sub-head sub-status sub-status--success">В экскурсию включено</h3>
+      <div class="multi-pick">
+        <button class="pick-add multi-pick-item" type="button">Добавить</button>
+        <div class="multi-pick-item">Питание</div>
+        <div class="multi-pick-item">Проживание</div>
+      </div>
+      <h3 class="sub-head sub-status sub-status--error">В экскурсию <b>не включено</b></h3>
+      <div class="multi-pick">
+        <button class="pick-add multi-pick-item" type="button">Добавить</button>
+        <div class="multi-pick-item">Входные билеты</div>
+      </div>
+
+      <h3 class="sub-head">Что взять с собой участникам?</h3>
+      <input type="text" name="stuff" id="stuff" placeholder="Например: обувь, фонарик">
+    </section> 
+
     </main>
   <!-- <div class="select" for="slct">
     <select name="slct" id="slct">
