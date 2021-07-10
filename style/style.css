@@ -728,27 +728,35 @@ input[id="radio-2"]:checked ~ .glider {
 .select input:checked ~ i.toggle.icon-arrow-down {
   display: none;
 }
+
 .select input:checked ~ i.toggle.icon-arrow-up {
   display: block;
 }
+
 .select input:checked div.options label.option .title {
   display: none !important;
 }
+
 .select input:not(:checked) {
   z-index: 4;
 }
+
 .select input:not(:checked) ~ label.option span.title {
   display: none;
 }
+
 .select input:not(:checked) ~ i.toggle.icon-arrow-up {
   display: none;
 }
+
 .select input:not(:checked) ~ i.toggle.icon-arrow-down {
   display: block;
 }
+
 .select input:disabled {
   cursor: no-drop;
 }
+
 .select span.placeholder {
   position: relative;
   z-index: 0;
@@ -757,6 +765,7 @@ input[id="radio-2"]:checked ~ .glider {
   color: #999;
   border-top: 0px;
 }
+
 .select label.option {
   display: block;
   overflow: hidden;
@@ -764,6 +773,7 @@ input[id="radio-2"]:checked ~ .glider {
   width: 100%;
   transition: all 1s ease-out;
 }
+
 .select label.option span.title {
   position: relative;
   z-index: 2;
@@ -773,18 +783,20 @@ input[id="radio-2"]:checked ~ .glider {
   font-size: 14px;
   line-height: 22px;
 }
+
 .select label.option span.title i.icon {
   padding-right: 8px;
   color: #92a8d1;
 }
+
 .select label.option span.title:hover {
-  /* color: #fff; */
-  background: rgba(184, 168, 255, 0.726);
-  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+  background: #F2F2F2;
 }
+
 .select label.option input {
   display: none;
 }
+
 .select label.option input:checked ~ span.title {
   position: absolute;
   
@@ -829,6 +841,7 @@ input[id="radio-2"]:checked ~ .glider {
 
 .transportation .img-item {
   width: 72px;
+  cursor: pointer;
 }
 
 .transportation .img-item--select .image-object {
