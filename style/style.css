@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+b {
+  font-weight: 600;
+}
+
 h1 {
   font-weight: bold;
   font-size: 24px;
@@ -896,10 +900,6 @@ input[id="radio-2"]:checked ~ .glider {
   padding-left: 20px;
 }
 
-.sub-status b {
-  font-weight: 600;
-}
-
 .sub-status::before {
   content: "";
   display: block;
@@ -920,3 +920,168 @@ input[id="radio-2"]:checked ~ .glider {
 .sub-status--error::before {
   background-image: url('../img/error.svg');
 }
+
+.excurs-days {
+  position: relative;
+  color: #171932;
+  margin-top: 10px;
+}
+
+.excurs-days::before {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  content: "";
+  display: block; 
+  width: 1px;
+  height: 98%;
+  /* background-color: transparent;
+  border-left: 1px dashed #BDBDBD; */
+  background-image: linear-gradient(to bottom, #BDBDBD, #BDBDBD 42%, transparent 42%, transparent 100%);
+  background-size: 1px 15px;
+}
+
+.excurs-day {
+  position: relative;
+  padding-left: 24px;
+  margin-top: 16px;
+}
+
+.excurs-day::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  content: "";
+  display: block; 
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #443296;
+}
+
+.excurs-day:last-child::after {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  content: "";
+  display: block; 
+  width: 24px;
+  height: 100% - 19px;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.sub-head-nomrg {
+  margin-top: 0;
+}
+
+.excurs-details {
+  display: none;
+}
+
+.key-block-hide--closed .excurs-details {
+  display: block;
+}
+
+.excurs-day.key-block-hide .hide-block {
+  top: 2px;
+}
+
+.excurs-name b {
+  font-weight: 700;
+}
+
+.excurs-descr {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.excurs-location {
+  position: relative;
+  padding-left: 20px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 8px;
+  color: #171932;
+}
+
+.excurs-location::before { 
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/exc-location.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+}
+
+.excursion-scroll {
+  margin-right: 0;
+  padding-right: 0;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E0E0E0;
+  flex-wrap: wrap;
+}
+
+.excursion-scroll .image-object {
+  background: none;
+  border: 1px solid #F2F2F2;
+}
+
+.excursion-scroll .img-item {
+  width: 18px;
+  cursor: pointer;
+}
+
+.excursion-scroll .image-object {
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.88px;
+}
+
+.excursion-scroll .image-object img{
+  width: 100%;
+  height: 100%;
+}
+
+.excursion-scroll .img-item-delete {
+  margin-left: auto;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.btn-add-day {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 6px 41px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.btn-add-day img { 
+  margin-left: 8px;
+  width: 14px;
+  height: 14px;
+}
+/* .pick-add {
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #2D3161;
+  border-radius: 4px;
+}
+
+.pick-add::after {
+  background: url('../img/add-pick.svg');
+} */
