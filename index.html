@@ -36,12 +36,12 @@
       <label for="request">Запрос экскурсии</label>
       
       <h3 class="sub-head">Откуда</h3>
-      <div class="address-input">
+      <div class="pic-input pic-input-address">
         <input type="text" name="from" id="from" placeholder="Введите адрес">
       </div>
       <a href="#" class="show-map">Показать на карте</a>
       <h3 class="sub-head">Куда</h3>
-      <div class="address-input">
+      <div class="pic-input pic-input-address">
         <input type="text" name="where" id="where" placeholder="Введите адрес">
       </div>
       <a href="#" class="show-map">Показать на карте</a>
@@ -57,7 +57,7 @@
       </div>
       
       <h3 class="sub-head">Место встречи</h3>
-      <div class="address-input">
+      <div class="pic-input pic-input-address">
         <input type="text" name="meet" id="meet" placeholder="Введите место встречи">
       </div>
       <a href="#" class="show-map">Показать на карте</a>
@@ -169,20 +169,20 @@
 
       <h3 class="sub-head">Сложность экскурсии</h3>
       <div class="select diff-select">
-        <input type="radio" name="option">
+        <input type="radio" name="difficulty">
         <i class="toggle icon icon-arrow-down"></i>
         <i class="toggle icon icon-arrow-up"></i>
         <span class="placeholder">Выберите сложность</span>
         <label class="option">
-          <input type="radio" name="option">
+          <input type="radio" name="difficulty">
           <span class="title">Легко</span>
         </label>
         <label class="option">
-          <input type="radio" name="option">
+          <input type="radio" name="difficulty">
           <span class="title">Средне</span>
         </label>
         <label class="option">
-          <input type="radio" name="option">
+          <input type="radio" name="difficulty">
           <span class="title">Сложно</span>
         </label>
       </div>
@@ -243,16 +243,16 @@
 
       <h3 class="sub-head">Проживание</h3>
       <div class="select diff-select">
-        <input type="radio" name="option">
+        <input type="radio" name="living">
         <i class="toggle icon icon-arrow-down"></i>
         <i class="toggle icon icon-arrow-up"></i>
         <span class="placeholder">Нет</span>
         <label class="option">
-          <input type="radio" name="option">
+          <input type="radio" name="living">
           <span class="title">Есть</span>
         </label>
         <label class="option">
-          <input type="radio" name="option">
+          <input type="radio" name="living">
           <span class="title">Нет</span>
         </label>
       </div>
@@ -416,7 +416,7 @@
       <div class="area-counter"><span class="counter-current">0</span>/200</div>
 
       <h3 class="sub-head">Адрес экскурсии</h3>
-      <div class="address-input">
+      <div class="pic-input pic-input-address">
         <input type="text" name="excurse-addr" id="excurse-addr" placeholder="Введите адрес">
       </div>
       <a href="#" class="show-map">Показать на карте</a>
@@ -499,9 +499,73 @@
         <button class="btn btn-default week-day" type="button">ВС</button>
       </div>
 
-      <h3 class="sub-head">Возраст участников</h3>
+      <div class="row">
+        <div class="row-item">
+          <h3 class="sub-head sub-head-nomrg">Начало</h3>
+          <div class="pic-input pic-input-clock">
+            <input type="text" name="start-time" id="start-time" placeholder="ЧЧ:ММ">
+          </div>
+        </div>
+        <div class="row-item">
+          <h3 class="sub-head sub-head-nomrg">Окончание</h3>
+          <div class="pic-input pic-input-clock">
+            <input type="text" name="end-time" id="end-time" placeholder="ЧЧ:ММ">
+          </div>
+        </div>
+      </div>
 
-      <button class="btn counter-any" type="button">Любой</button>
+      <h3 class="sub-head">Повторять</h3>
+      <div class="select diff-select">
+        <input type="radio" name="repeat">
+        <i class="toggle icon icon-arrow-down"></i>
+        <i class="toggle icon icon-arrow-up"></i>
+        <span class="placeholder">Срок</span>
+        <label class="option">
+          <input type="radio" name="repeat">
+          <span class="title">3 месяца</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="repeat">
+          <span class="title">6 месяцев</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="repeat">
+          <span class="title">9 месяцев</span>
+        </label>
+      </div>
+
+      <div class="row currency-cont">
+        <div class="row-item">
+          <h3 class="sub-head">Стоимость</h3>
+          <div class="pic-input">
+            <input type="text" name="price" id="price" placeholder="Введите стоимость">
+          </div>
+        </div>
+        <div class="row-item row-item-grow">
+          <h3 class="sub-head">Валюта</h3>
+          <div class="select diff-select">
+            <input type="radio" name="currency">
+            <i class="toggle icon icon-arrow-down"></i>
+            <i class="toggle icon icon-arrow-up"></i>
+            <span class="placeholder">₽</span>
+            <label class="option">
+              <input type="radio" name="currency" value="₽">
+              <span class="title">₽</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="currency" value="€">
+              <span class="title">€</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="currency" value="$">
+              <span class="title">$</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="btn btn-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
       <input type="checkbox" name="kids-0-6" id="kids-0-6" checked>
       <label for="kids-0-6">можно с детьми от 0 до 6 лет</label>
     </section>

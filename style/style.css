@@ -197,6 +197,21 @@ input[type="checkbox"]:checked + label::before {
   background: url('../img/add-pick.svg');
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.row-item-grow {
+  flex-grow: 1;
+}
+
+/* .row-item {
+
+} */
+
 .tabs {
   width: 100%;
   max-width: 279px;
@@ -445,16 +460,16 @@ input[type="radio"]:checked + label {
   background: url('../img/zip.svg');
 }
 
-.address-input {
+.pic-input {
   position: relative;
 }
 
-.address-input input{
+.pic-input input{
   padding: 8px 44px;
   padding-right: 0;
 }
 
-.address-input::before {
+.pic-input::before {
   content: "";
   display: block;
   width: 20px;
@@ -463,6 +478,18 @@ input[type="radio"]:checked + label {
   background: url('../img/map-pin.svg');
   top: 9px;
   left: 16px;
+}
+
+.pic-input-address::before {
+  background: url('../img/map-pin.svg');
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+
+.pic-input-clock::before {
+  background: url('../img/clock-gray.svg');
 }
 
 .horisont-scroll {
@@ -688,7 +715,7 @@ input[type="radio"]:checked + label {
   position: absolute;
   z-index: 4;
   right: 21px;
-  top: 20px;
+  top: 16px;
   color: #ccc;
 
   width: 10px;
@@ -704,6 +731,7 @@ input[type="radio"]:checked + label {
   width: 100%;
   box-sizing: border-box;
   /* height: 100%; */
+  font-size: inherit;
   padding: 10px 16px;
   background: white;
   border-top: 1px solid #BDBDBD;
@@ -1141,4 +1169,24 @@ input[type="radio"]:checked + label {
 
 .week-day .btn-default {
   color: #2D3161;
+}
+
+.currency-cont {
+  align-items: start;
+}
+
+.currency-cont .row-item input[type="text"] {
+  margin-top: 0;
+}
+
+.currency-cont span.placeholder,
+.currency-cont label.option span.title {
+  padding: 8px 16px;
+}
+
+
+.currency-cont .diff-select,
+.currency-cont .pic-input {
+  margin-top: 8px;
+  /* height: 40px; */
 }
