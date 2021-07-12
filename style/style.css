@@ -1147,6 +1147,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 
   margin-top: 8px;
   font-weight: normal;
