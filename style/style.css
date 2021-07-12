@@ -1089,6 +1089,10 @@ input[id="radio-2"]:checked ~ .glider {
   border-radius: 8px;
 }
 
+.btn-invert:hover {
+  background-color: #DBDFFA;
+}
+
 .load-images-short label {
   flex-grow: 0;
   margin: auto;
