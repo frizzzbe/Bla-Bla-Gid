@@ -120,9 +120,9 @@
 
       <h3 class="sub-head">Выберите параметры экскурсии</h3>
       <div class="tabs">
-        <input type="radio" id="radio-1" name="tabs" value="whole" checked />
+        <input class="input-tab" type="radio" id="radio-1" name="tabs" value="whole" checked />
         <label class="tab" for="radio-1">Групповая</label>
-        <input type="radio" id="radio-2" name="tabs"  value="today"/>
+        <input class="input-tab" type="radio" id="radio-2" name="tabs"  value="today"/>
         <label class="tab" for="radio-2">Индивидуальная</label>
         <span class="glider"></span>
       </div>
@@ -475,7 +475,36 @@
       <div class="exc-delete img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="16px" height="16px"> Удалить</div>
     </section>
 
+    <section class="key-block key-block-hide block-parameters">
+      <button class="hide-block"></button>
+      <h2 class="block-heading heading-question">Расписание экскурсии</h2>
 
+      <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
+      <div class="tabs">
+        <input class="input-tab" type="radio" id="day" name="duration" value="day" checked />
+        <label class="tab" for="day">Дневная</label>
+        <input class="input-tab" type="radio" id="multi-day" name="duration"  value="multi-day"/>
+        <label class="tab" for="multi-day">Многодневная</label>
+        <span class="glider"></span>
+      </div>
+      
+      <h3 class="sub-head">Количество участников</h3>
+      <div class="members-count">
+        <button class="btn week-day" type="button">ПН</button>
+        <button class="btn btn-default week-day" type="button">ВТ</button>
+        <button class="btn btn-default week-day" type="button">СР</button>
+        <button class="btn btn-default week-day" type="button">ЧТ</button>
+        <button class="btn btn-default week-day" type="button">ПТ</button>
+        <button class="btn btn-default week-day" type="button">СБ</button>
+        <button class="btn btn-default week-day" type="button">ВС</button>
+      </div>
+
+      <h3 class="sub-head">Возраст участников</h3>
+
+      <button class="btn counter-any" type="button">Любой</button>
+      <input type="checkbox" name="kids-0-6" id="kids-0-6" checked>
+      <label for="kids-0-6">можно с детьми от 0 до 6 лет</label>
+    </section>
 
 
   </main>
