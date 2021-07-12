@@ -404,6 +404,10 @@ input[type="radio"]:checked + label {
   cursor: pointer;
 }
 
+.sub-head.key-block-hide .hide-block { 
+  top: 0;
+}
+
 .key-block-hide--closed .hide-block {
   transform: rotate(180deg);
 }
@@ -1189,4 +1193,30 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .currency-cont .pic-input {
   margin-top: 8px;
   /* height: 40px; */
+}
+
+.choosen-dates {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.choosen-date-item {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #171932;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 5px;
+  margin-bottom: 8px;
+  border: 0.5px solid #2D3161;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.choosen-date-item img { 
+  margin-left: 8px;
 }
