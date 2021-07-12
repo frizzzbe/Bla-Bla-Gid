@@ -205,12 +205,12 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .row-item-grow {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
-/* .row-item {
-
-} */
+.row-item-shrink {
+  flex-grow: 1;
+}
 
 .tabs {
   width: 100%;
@@ -1207,6 +1207,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   border: none;
   background: none;
   font-size: 0;
+  cursor: pointer;
 }
 
 .choosen-date-item {
