@@ -710,6 +710,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-top: 8px;
 }
 
+.members-age .counter-btn.btn-active {
+  color: #FFFFFF;
+  background: #2D3161;
+}
+
 .counter-any {
   font-weight: 600;
   font-size: 14px;
