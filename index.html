@@ -15,710 +15,723 @@
     </a>
   </header>
   <main class="main-content wrapper">
-    <h1 class="main-heading">Добавление экскурсии</h1>
-    <!-- класс "key-block-hide--closed" для section переворачивает стрелку -->
-    <section class="key-block key-block-hide ">
-      <button class="hide-block"></button>
-      <h2 class="block-heading heading-question">Общая информация</h2>
-
-      <h3 class="sub-head">Название экскурсии</h3>
-      <input type="text" name="title" id="title" placeholder="Введите название">
-
-      <h3 class="sub-head">Описание экскурсии</h3>
-      <div class="area-wrapper">
-        <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
+    <div class="desktop-nav-cont">
+      <div class="desktop-nav">
+        <a href="#" class="header-logo">
+          <img src="./img/logo.png" alt="Логотип компании">
+        </a>
       </div>
-      <div class="area-counter"><span class="counter-current">0</span>/5000</div>
+    </div>
+    <div class="main-block">
 
-      <input type="checkbox" name="momental" id="momental">
-      <label class="momental-label" for="momental">Моментальное бронирование</label>
-      <input type="checkbox" name="request" id="request">
-      <label for="request">Запрос экскурсии</label>
-      
-      <h3 class="sub-head">Откуда</h3>
-      <div class="pic-input pic-input-address">
-        <input type="text" name="from" id="from" placeholder="Введите адрес">
-      </div>
-      <a href="#" class="show-map">Показать на карте</a>
-      <h3 class="sub-head">Куда</h3>
-      <div class="pic-input pic-input-address">
-        <input type="text" name="where" id="where" placeholder="Введите адрес">
-      </div>
-      <a href="#" class="show-map">Показать на карте</a>
-
-      <input type="checkbox" name="one-city" id="one-city">
-      <label for="one-city">Проходит в одном городе</label>
-
-      <h3 class="sub-head">Города в пути</h3>
-      <div class="multi-pick">
-        <button class="pick-add multi-pick-item" type="button">Добавить</button>
-        <div class="multi-pick-item">Воронеж</div>
-        <div class="multi-pick-item">Сочи</div>
-      </div>
-      
-      <h3 class="sub-head">Место встречи</h3>
-      <div class="pic-input pic-input-address">
-        <input type="text" name="meet" id="meet" placeholder="Введите место встречи">
-      </div>
-      <a href="#" class="show-map">Показать на карте</a>
-      
-      <h3 class="sub-head heading-question">Фотографии экскурсии</h3>
-      <div class="horisont-scroll">
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/image.jpg" alt="Фото экскурсии">
-          </div>
-          <p class="image-title">Photo.jpg</p>
-          <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+      <h1 class="main-heading">Добавление экскурсии</h1>
+      <!-- класс "key-block-hide--closed" для section переворачивает стрелку -->
+      <section class="key-block key-block-hide">
+        <button class="hide-block"></button>
+        <h2 class="block-heading heading-question">Общая информация</h2>
+  
+        <h3 class="sub-head">Название экскурсии</h3>
+        <input type="text" name="title" id="title" placeholder="Введите название">
+  
+        <h3 class="sub-head">Описание экскурсии</h3>
+        <div class="area-wrapper">
+          <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-      </div>
-      <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
-      <div class="load-images">
-        <input type="file" name="photos" id="photos" accept=".png,.jpg,.jpeg">
-        <label class="load-photos" for="photos">Загрузить фотографии</label>
-        <input type="file" name="cover" id="cover" accept=".png,.jpg,.jpeg">
-        <label class="load-cover" for="cover">Загрузить обложку</label>
-      </div>
-    </section>
-
-    <section class="key-block key-block-hide block-parameters">
-      <button class="hide-block"></button>
-      <h2 class="block-heading heading-question">Состав группы</h2>
-
-      <h3 class="sub-head">Выберите параметры экскурсии</h3>
-      <div class="tabs">
-        <input class="input-tab" type="radio" id="radio-1" name="tabs" value="whole" checked />
-        <label class="tab" for="radio-1">Групповая</label>
-        <input class="input-tab" type="radio" id="radio-2" name="tabs"  value="today"/>
-        <label class="tab" for="radio-2">Индивидуальная</label>
-        <span class="glider"></span>
-      </div>
-      
-      <h3 class="sub-head">Количество участников</h3>
-      <div class="counter">
-        <button class="btn btn-gray counter-btn counter-btn--dist" type="button"></button>
-        <span class="counter-value">10</span>
-        <button class="btn counter-btn counter-btn--add" type="button"></button>
-      </div>
-      <div class="members-count">
-        <button class="btn counter-btn" type="button">10</button>
-        <button class="btn btn-default counter-btn" type="button">20</button>
-        <button class="btn btn-default counter-btn" type="button">30</button>
-        <button class="btn btn-default counter-btn" type="button">50</button>
-        <button class="btn btn-default counter-btn" type="button">70</button>
-        <button class="btn btn-default counter-btn" type="button">100</button>
-      </div>
-
-      <h3 class="sub-head">Возраст участников</h3>
-      <div class="members-age">
-        <button class="btn btn-default counter-btn" type="button">6+</button>
-        <button class="btn btn-default counter-btn" type="button">12+</button>
-        <button class="btn btn-default counter-btn" type="button">18-30</button>
-        <button class="btn btn-default counter-btn" type="button">30+</button>
-        <button class="btn btn-default counter-btn" type="button">40+</button>
-        <button class="btn btn-default counter-btn" type="button">50+</button>
-        <button class="btn btn-default counter-btn" type="button">60+</button>
-        <button class="btn btn-default counter-btn" type="button">70+</button>
-      </div>
-
-      <button class="btn counter-any" type="button">Любой</button>
-      <input type="checkbox" name="kids-0-6" id="kids-0-6" checked>
-      <label for="kids-0-6">можно с детьми от 0 до 6 лет</label>
-    </section>
-
-    <section class="key-block">
-      <div class="banner">Баннер</div>
-    </section>
-
-    <section class="key-block key-block-hide ">
-      <button class="hide-block"></button>
-      <h2 class="block-heading heading-question">Параметры экскурсии</h2>
-
-      <h3 class="sub-head">Сложность экскурсии</h3>
-      <div class="select diff-select">
-        <input type="radio" name="difficulty">
-        <i class="toggle icon icon-arrow-down"></i>
-        <i class="toggle icon icon-arrow-up"></i>
-        <span class="placeholder">Выберите сложность</span>
-        <label class="option">
-          <input type="radio" name="difficulty">
-          <span class="title">Легко</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="difficulty">
-          <span class="title">Средне</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="difficulty">
-          <span class="title">Сложно</span>
-        </label>
-      </div>
-      
-      <h3 class="sub-head">Способ передвижения</h3>
-      <!-- <div class="transportation">
-        <div class="transportation-item">
-
-        </div>
-      </div> -->
-      <div class="transportation horisont-scroll">
-        <div class="img-item img-item--select">
-          <div class="image-object">
-            <img src="./img/transport-1.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Пешком</p>
-        </div>
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/transport-2.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Машина</p>
-        </div>
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/transport-3.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Велосипед</p>
-        </div>
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/transport-4.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Мотоцикл</p>
-        </div>
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/transport-5.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Автобус</p>
-        </div>
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/transport-6.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Самолет</p>
-        </div>
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/transport-7.svg" alt="Иконка транспорта">
-          </div>
-          <p class="image-title">Корабль</p>
-        </div>
-      </div>
-
-      <h3 class="sub-head">Какое расстояние пройдут участники?</h3>
-      <input type="text" name="distant" id="distant" placeholder="Введите расстояние в км">
-
-      <h3 class="sub-head">Проживание</h3>
-      <div class="select diff-select">
-        <input type="radio" name="living">
-        <i class="toggle icon icon-arrow-down"></i>
-        <i class="toggle icon icon-arrow-up"></i>
-        <span class="placeholder">Нет</span>
-        <label class="option">
-          <input type="radio" name="living">
-          <span class="title">Есть</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="living">
-          <span class="title">Нет</span>
-        </label>
-      </div>
-
-      
-      <h3 class="sub-head">Язык экскурсии</h3>
-      <div class="multi-pick">
-        <button class="pick-add multi-pick-item" type="button">Добавить</button>
-        <div class="multi-pick-item">Русский</div>
-        <div class="multi-pick-item">English</div>
-      </div>
-      <h3 class="sub-head">Категория экскурсии</h3>
-      <div class="multi-pick">
-        <button class="pick-add multi-pick-item" type="button">Добавить</button>
-        <div class="multi-pick-item">Экскурсиооный тур</div>
-      </div>
-      <h3 class="sub-head sub-status sub-status--success">В экскурсию включено</h3>
-      <div class="multi-pick">
-        <button class="pick-add multi-pick-item" type="button">Добавить</button>
-        <div class="multi-pick-item">Питание</div>
-        <div class="multi-pick-item">Проживание</div>
-      </div>
-      <h3 class="sub-head sub-status sub-status--error">В экскурсию <b>не включено</b></h3>
-      <div class="multi-pick">
-        <button class="pick-add multi-pick-item" type="button">Добавить</button>
-        <div class="multi-pick-item">Входные билеты</div>
-      </div>
-
-      <h3 class="sub-head">Что взять с собой участникам?</h3>
-      <input type="text" name="stuff" id="stuff" placeholder="Например: обувь, фонарик">
-    </section> 
-
-    <section class="key-block key-block-hide">
-      <button class="hide-block"></button>
-      <h2 class="block-heading heading-question">Маршрут экскурсии</h2>
-
-      <h3 class="sub-head sub-head-nomrg">Маршрут экскурсии и параметры для каждой точки</h3>
-
-      <div class="excurs-days">
-        <!-- класс "key-block-hide--closed" показывает содержимое блока, если его убрать, то блок свернётся, и стрелка поменяет направление -->
-        <div class="excurs-day key-block-hide key-block-hide--closed">
-          <button class="hide-block"></button>
-          <h4 class="excurs-name"><b>1 день.</b> Встреча</h4>
-          <div class="excurs-details">
-            <p class="excurs-descr">Встречаемся в аэропорту Шереметьево, возле остановки Аэроэкспесса</p>
-            <p class="excurs-location">Аэропорт Шреметьево, Химки, Московская обл</p>
-            <div class="excursion-scroll horisont-scroll">
-              <div class="img-item img-item--select">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
-            </div>
-          </div>
-        </div>
-        <div class="excurs-day key-block-hide key-block-hide--closed">
-          <button class="hide-block"></button>
-          <h4 class="excurs-name"><b>2 день.</b> День в Воронеже</h4>
-          <div class="excurs-details">
-            <p class="excurs-descr">Заселяемся в отель, посещение Воронежского музея искусств, обед, посещение Воронежский областной краеведческого музея</p>
-            <p class="excurs-location">Воронеж</p>
-            <div class="excursion-scroll horisont-scroll">
-              <div class="img-item img-item--select">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-3.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-4.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item img-item--select">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-3.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-4.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <!-- <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div> -->
-            </div>
-          </div>
-        </div>
-        <div class="excurs-day key-block-hide">
-          <button class="hide-block"></button>
-          <h4 class="excurs-name"><b>3 день.</b> Поездка в Сочи</h4>
-          <div class="excurs-details">
-            <p class="excurs-descr">Встречаемся в аэропорту Шереметьево, возле остановки Аэроэкспесса</p>
-            <p class="excurs-location">Аэропорт Шреметьево, Химки, Московская обл</p>
-            <div class="excursion-scroll horisont-scroll">
-              <div class="img-item img-item--select">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <div class="img-item">
-                <div class="image-object">
-                  <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
-                </div>
-              </div>
-              <!-- <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="btn btn-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
-
-    </section>
-    
-    <section class="key-block">
-      <div class="banner">Баннер</div>
-    </section>
-
-    <section class="key-block">
-      <h2 class="block-heading">Маршрут экскурсии</h2>
-
-      <h3 class="sub-head sub-head-nomrg">Маршрут экскурсии и параметры для каждой точки</h3>
-
-      <h3 class="sub-head">Название</h3>
-      <input type="text" name="name-way" id="name-way" placeholder="Введите название">
+        <div class="area-counter"><span class="counter-current">0</span>/5000</div>
+  
+        <input type="checkbox" name="momental" id="momental">
+        <label class="momental-label" for="momental">Моментальное бронирование</label>
+        <input type="checkbox" name="request" id="request">
+        <label for="request">Запрос экскурсии</label>
         
-      <h3 class="sub-head">Описание</h3>
-      <div class="area-wrapper">
-        <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Введите краткое описание места." resize="resize-y"></textarea>
-      </div>
-      <div class="area-counter"><span class="counter-current">0</span>/200</div>
-
-      <h3 class="sub-head">Адрес экскурсии</h3>
-      <div class="pic-input pic-input-address">
-        <input type="text" name="excurse-addr" id="excurse-addr" placeholder="Введите адрес">
-      </div>
-      <a href="#" class="show-map">Показать на карте</a>
-
-      <button class="btn btn-add-day btn-invert" type="button">Добавить день <img src="./img/add-pick-blue.svg" alt="Добавить день"></button>
+        <h3 class="sub-head">Откуда</h3>
+        <div class="pic-input pic-input-address">
+          <input type="text" name="from" id="from" placeholder="Введите адрес">
+        </div>
+        <a href="#" class="show-map">Показать на карте</a>
+        <h3 class="sub-head">Куда</h3>
+        <div class="pic-input pic-input-address">
+          <input type="text" name="where" id="where" placeholder="Введите адрес">
+        </div>
+        <a href="#" class="show-map">Показать на карте</a>
+  
+        <input type="checkbox" name="one-city" id="one-city">
+        <label for="one-city">Проходит в одном городе</label>
+  
+        <h3 class="sub-head">Города в пути</h3>
+        <div class="multi-pick">
+          <button class="pick-add multi-pick-item" type="button">Добавить</button>
+          <div class="multi-pick-item">Воронеж</div>
+          <div class="multi-pick-item">Сочи</div>
+        </div>
+        
+        <h3 class="sub-head">Место встречи</h3>
+        <div class="pic-input pic-input-address">
+          <input type="text" name="meet" id="meet" placeholder="Введите место встречи">
+        </div>
+        <a href="#" class="show-map">Показать на карте</a>
+        
+        <h3 class="sub-head heading-question">Фотографии экскурсии</h3>
+        <div class="horisont-scroll">
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/image.jpg" alt="Фото экскурсии">
+            </div>
+            <p class="image-title">Photo.jpg</p>
+            <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+        </div>
+        <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
+        <div class="load-images">
+          <input type="file" name="photos" id="photos" accept=".png,.jpg,.jpeg">
+          <label class="load-photos" for="photos">Загрузить фотографии</label>
+          <input type="file" name="cover" id="cover" accept=".png,.jpg,.jpeg">
+          <label class="load-cover" for="cover">Загрузить обложку</label>
+        </div>
+      </section>
+  
+      <section class="key-block key-block-hide block-parameters">
+        <button class="hide-block"></button>
+        <h2 class="block-heading heading-question">Состав группы</h2>
+  
+        <h3 class="sub-head">Выберите параметры экскурсии</h3>
+        <div class="tabs">
+          <input class="input-tab" type="radio" id="radio-1" name="tabs" value="whole" checked />
+          <label class="tab" for="radio-1">Групповая</label>
+          <input class="input-tab" type="radio" id="radio-2" name="tabs"  value="today"/>
+          <label class="tab" for="radio-2">Индивидуальная</label>
+          <span class="glider"></span>
+        </div>
+        
+        <h3 class="sub-head">Количество участников</h3>
+        <div class="counter">
+          <button class="btn btn-gray counter-btn counter-btn--dist" type="button"></button>
+          <span class="counter-value">10</span>
+          <button class="btn counter-btn counter-btn--add" type="button"></button>
+        </div>
+        <div class="members-count">
+          <button class="btn counter-btn" type="button">10</button>
+          <button class="btn btn-default counter-btn" type="button">20</button>
+          <button class="btn btn-default counter-btn" type="button">30</button>
+          <button class="btn btn-default counter-btn" type="button">50</button>
+          <button class="btn btn-default counter-btn" type="button">70</button>
+          <button class="btn btn-default counter-btn" type="button">100</button>
+        </div>
+  
+        <h3 class="sub-head">Возраст участников</h3>
+        <div class="members-age">
+          <button class="btn btn-default counter-btn" type="button">6+</button>
+          <button class="btn btn-default counter-btn" type="button">12+</button>
+          <button class="btn btn-default counter-btn" type="button">18-30</button>
+          <button class="btn btn-default counter-btn" type="button">30+</button>
+          <button class="btn btn-default counter-btn" type="button">40+</button>
+          <button class="btn btn-default counter-btn" type="button">50+</button>
+          <button class="btn btn-default counter-btn" type="button">60+</button>
+          <button class="btn btn-default counter-btn" type="button">70+</button>
+        </div>
+  
+        <button class="btn counter-any" type="button">Любой</button>
+        <input type="checkbox" name="kids-0-6" id="kids-0-6" checked>
+        <label for="kids-0-6">можно с детьми от 0 до 6 лет</label>
+      </section>
+  
+      <section class="key-block">
+        <div class="banner">Баннер</div>
+      </section>
+  
+      <section class="key-block key-block-hide">
+        <button class="hide-block"></button>
+        <h2 class="block-heading heading-question">Параметры экскурсии</h2>
+  
+        <h3 class="sub-head">Сложность экскурсии</h3>
+        <div class="select diff-select">
+          <input type="radio" name="difficulty">
+          <i class="toggle icon icon-arrow-down"></i>
+          <i class="toggle icon icon-arrow-up"></i>
+          <span class="placeholder">Выберите сложность</span>
+          <label class="option">
+            <input type="radio" name="difficulty">
+            <span class="title">Легко</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="difficulty">
+            <span class="title">Средне</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="difficulty">
+            <span class="title">Сложно</span>
+          </label>
+        </div>
+        
+        <h3 class="sub-head">Способ передвижения</h3>
+        <!-- <div class="transportation">
+          <div class="transportation-item">
+  
+          </div>
+        </div> -->
+        <div class="transportation horisont-scroll">
+          <div class="img-item img-item--select">
+            <div class="image-object">
+              <img src="./img/transport-1.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Пешком</p>
+          </div>
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/transport-2.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Машина</p>
+          </div>
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/transport-3.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Велосипед</p>
+          </div>
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/transport-4.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Мотоцикл</p>
+          </div>
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/transport-5.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Автобус</p>
+          </div>
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/transport-6.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Самолет</p>
+          </div>
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/transport-7.svg" alt="Иконка транспорта">
+            </div>
+            <p class="image-title">Корабль</p>
+          </div>
+        </div>
+  
+        <h3 class="sub-head">Какое расстояние пройдут участники?</h3>
+        <input type="text" name="distant" id="distant" placeholder="Введите расстояние в км">
+  
+        <h3 class="sub-head">Проживание</h3>
+        <div class="select diff-select">
+          <input type="radio" name="living">
+          <i class="toggle icon icon-arrow-down"></i>
+          <i class="toggle icon icon-arrow-up"></i>
+          <span class="placeholder">Нет</span>
+          <label class="option">
+            <input type="radio" name="living">
+            <span class="title">Есть</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="living">
+            <span class="title">Нет</span>
+          </label>
+        </div>
+  
+        
+        <h3 class="sub-head">Язык экскурсии</h3>
+        <div class="multi-pick">
+          <button class="pick-add multi-pick-item" type="button">Добавить</button>
+          <div class="multi-pick-item">Русский</div>
+          <div class="multi-pick-item">English</div>
+        </div>
+        <h3 class="sub-head">Категория экскурсии</h3>
+        <div class="multi-pick">
+          <button class="pick-add multi-pick-item" type="button">Добавить</button>
+          <div class="multi-pick-item">Экскурсиооный тур</div>
+        </div>
+        <h3 class="sub-head sub-status sub-status--success">В экскурсию включено</h3>
+        <div class="multi-pick">
+          <button class="pick-add multi-pick-item" type="button">Добавить</button>
+          <div class="multi-pick-item">Питание</div>
+          <div class="multi-pick-item">Проживание</div>
+        </div>
+        <h3 class="sub-head sub-status sub-status--error">В экскурсию <b>не включено</b></h3>
+        <div class="multi-pick">
+          <button class="pick-add multi-pick-item" type="button">Добавить</button>
+          <div class="multi-pick-item">Входные билеты</div>
+        </div>
+  
+        <h3 class="sub-head">Что взять с собой участникам?</h3>
+        <input type="text" name="stuff" id="stuff" placeholder="Например: обувь, фонарик">
+      </section> 
+  
+      <section class="key-block key-block-hide">
+        <button class="hide-block"></button>
+        <h2 class="block-heading heading-question">Маршрут экскурсии</h2>
+  
+        <h3 class="sub-head sub-head-nomrg">Маршрут экскурсии и параметры для каждой точки</h3>
+  
+        <div class="excurs-days">
+          <!-- класс "key-block-hide--closed" показывает содержимое блока, если его убрать, то блок свернётся, и стрелка поменяет направление -->
+          <div class="excurs-day key-block-hide key-block-hide--closed">
+            <button class="hide-block"></button>
+            <h4 class="excurs-name"><b>1 день.</b> Встреча</h4>
+            <div class="excurs-details">
+              <p class="excurs-descr">Встречаемся в аэропорту Шереметьево, возле остановки Аэроэкспесса</p>
+              <p class="excurs-location">Аэропорт Шреметьево, Химки, Московская обл</p>
+              <div class="excursion-scroll horisont-scroll">
+                <div class="img-item img-item--select">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+              </div>
+            </div>
+          </div>
+          <div class="excurs-day key-block-hide key-block-hide--closed">
+            <button class="hide-block"></button>
+            <h4 class="excurs-name"><b>2 день.</b> День в Воронеже</h4>
+            <div class="excurs-details">
+              <p class="excurs-descr">Заселяемся в отель, посещение Воронежского музея искусств, обед, посещение Воронежский областной краеведческого музея</p>
+              <p class="excurs-location">Воронеж</p>
+              <div class="excursion-scroll horisont-scroll">
+                <div class="img-item img-item--select">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-3.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-4.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item img-item--select">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-3.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-4.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <!-- <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div> -->
+              </div>
+            </div>
+          </div>
+          <div class="excurs-day key-block-hide">
+            <button class="hide-block"></button>
+            <h4 class="excurs-name"><b>3 день.</b> Поездка в Сочи</h4>
+            <div class="excurs-details">
+              <p class="excurs-descr">Встречаемся в аэропорту Шереметьево, возле остановки Аэроэкспесса</p>
+              <p class="excurs-location">Аэропорт Шреметьево, Химки, Московская обл</p>
+              <div class="excursion-scroll horisont-scroll">
+                <div class="img-item img-item--select">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-1.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <div class="img-item">
+                  <div class="image-object">
+                    <img src="./img/exc-location-img-2.png" alt="Фотография с экскурсии">
+                  </div>
+                </div>
+                <!-- <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <button class="btn btn-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
+  
+      </section>
       
-      <h3 class="sub-head">Фотографии места</h3>
-      <div class="horisont-scroll">
-        <div class="img-item">
-          <div class="image-object">
-            <img src="./img/image.jpg" alt="Фото экскурсии">
+      <section class="key-block">
+        <div class="banner">Баннер</div>
+      </section>
+  
+      <section class="key-block">
+        <h2 class="block-heading">Маршрут экскурсии</h2>
+  
+        <h3 class="sub-head sub-head-nomrg">Маршрут экскурсии и параметры для каждой точки</h3>
+  
+        <h3 class="sub-head">Название</h3>
+        <input type="text" name="name-way" id="name-way" placeholder="Введите название">
+          
+        <h3 class="sub-head">Описание</h3>
+        <div class="area-wrapper">
+          <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Введите краткое описание места." resize="resize-y"></textarea>
+        </div>
+        <div class="area-counter"><span class="counter-current">0</span>/200</div>
+  
+        <h3 class="sub-head">Адрес экскурсии</h3>
+        <div class="pic-input pic-input-address">
+          <input type="text" name="excurse-addr" id="excurse-addr" placeholder="Введите адрес">
+        </div>
+        <a href="#" class="show-map">Показать на карте</a>
+  
+        <button class="btn btn-add-day btn-invert" type="button">Добавить день <img src="./img/add-pick-blue.svg" alt="Добавить день"></button>
+        
+        <h3 class="sub-head">Фотографии места</h3>
+        <div class="horisont-scroll">
+          <div class="img-item">
+            <div class="image-object">
+              <img src="./img/image.jpg" alt="Фото экскурсии">
+            </div>
+            <p class="image-title">Photo.jpg</p>
+            <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
           </div>
-          <p class="image-title">Photo.jpg</p>
-          <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
+          <div class="img-item">
+            <div class="image-object"></div>
+          </div>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+        <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
+        <div class="load-images load-images-short">
+          <input type="file" name="photos-exc" id="photos-exc" accept=".png,.jpg,.jpeg">
+          <label class="load-photos" for="photos-exc">Загрузить фотографии</label>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+        <button class="btn btn-add-day exc-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
+        <div class="exc-delete img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="16px" height="16px"> Удалить место</div>
+      </section>
+  
+      <section class="key-block key-block-hide block-parameters">
+        <button class="hide-block"></button>
+        <h2 class="block-heading heading-question">Расписание экскурсии</h2>
+  
+        <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
+        <div class="tabs">
+          <input class="input-tab" type="radio" id="day" name="duration-1" value="day" checked />
+          <label class="tab" for="day">Дневная</label>
+          <input class="input-tab" type="radio" id="multi-day" name="duration-1"  value="multi-day"/>
+          <label class="tab" for="multi-day">Многодневная</label>
+          <span class="glider"></span>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+        
+        <div class="members-count">
+          <button class="btn week-day" type="button">ПН</button>
+          <button class="btn btn-default week-day" type="button">ВТ</button>
+          <button class="btn btn-default week-day" type="button">СР</button>
+          <button class="btn btn-default week-day" type="button">ЧТ</button>
+          <button class="btn btn-default week-day" type="button">ПТ</button>
+          <button class="btn btn-default week-day" type="button">СБ</button>
+          <button class="btn btn-default week-day" type="button">ВС</button>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+  
+        <div class="row">
+          <div class="row-item">
+            <h3 class="sub-head sub-head-nomrg">Начало</h3>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" id="start-time" placeholder="ЧЧ:ММ">
+            </div>
+          </div>
+          <div class="row-item">
+            <h3 class="sub-head sub-head-nomrg">Окончание</h3>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" id="end-time" placeholder="ЧЧ:ММ">
+            </div>
+          </div>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+  
+        <h3 class="sub-head">Повторять</h3>
+        <div class="select diff-select">
+          <input type="radio" name="repeat">
+          <i class="toggle icon icon-arrow-down"></i>
+          <i class="toggle icon icon-arrow-up"></i>
+          <span class="placeholder">Срок</span>
+          <label class="option">
+            <input type="radio" name="repeat">
+            <span class="title">3 месяца</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="repeat">
+            <span class="title">6 месяцев</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="repeat">
+            <span class="title">9 месяцев</span>
+          </label>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+  
+        <div class="row currency-cont">
+          <div class="row-item row-item-grow">
+            <h3 class="sub-head">Стоимость</h3>
+            <input type="text" name="price" id="price" placeholder="Введите стоимость">
+          </div>
+          <div class="row-item row-item-shrink">
+            <h3 class="sub-head">Валюта</h3>
+            <div class="select diff-select">
+              <input type="radio" name="currency">
+              <i class="toggle icon icon-arrow-down"></i>
+              <i class="toggle icon icon-arrow-up"></i>
+              <span class="placeholder">₽</span>
+              <label class="option">
+                <input type="radio" name="currency" value="₽">
+                <span class="title">₽</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="currency" value="€">
+                <span class="title">€</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="currency" value="$">
+                <span class="title">$</span>
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+  
+  
+        <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+        
+        <div class="choosen-date">
+          <h3 class="sub-head key-block-hide">
+            <button class="hide-block"></button>
+            Выбранное время
+          </h3>
+          <ul class="choosen-dates">
+            <li class="choosen-date-item">
+              ПН 07:30-10:30 — 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+          </ul>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
+      </section>
+  
+      <section class="key-block">
+        <div class="choosen-date">
+          <h3 class="sub-head key-block-hide key-block-hide--closed">
+            <button class="hide-block"></button>
+            Выбранное время
+          </h3>
+          <ul class="choosen-dates">
+            <li class="choosen-date-item">
+              ПН 07:30-10:30 — 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+            <li class="choosen-date-item">
+              ПН 07:30-10:30 — 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+            <li class="choosen-date-item">
+              ПН 07:30-10:30 — 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+            <li class="choosen-date-item">
+              ПН 07:30-10:30 — 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+            <li class="choosen-date-item">
+              ПН 07:30-10:30 — 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+          </ul>
+          <button class="btn btn-add-day" type="button">Показать все даты</button>
         </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-        <div class="img-item">
-          <div class="image-object"></div>
-        </div>
-      </div>
-      <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
-      <div class="load-images load-images-short">
-        <input type="file" name="photos-exc" id="photos-exc" accept=".png,.jpg,.jpeg">
-        <label class="load-photos" for="photos-exc">Загрузить фотографии</label>
-      </div>
-      <button class="btn btn-add-day exc-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
-      <div class="exc-delete img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="16px" height="16px"> Удалить место</div>
-    </section>
-
-    <section class="key-block key-block-hide block-parameters">
-      <button class="hide-block"></button>
-      <h2 class="block-heading heading-question">Расписание экскурсии</h2>
-
-      <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
-      <div class="tabs">
-        <input class="input-tab" type="radio" id="day" name="duration-1" value="day" checked />
-        <label class="tab" for="day">Дневная</label>
-        <input class="input-tab" type="radio" id="multi-day" name="duration-1"  value="multi-day"/>
-        <label class="tab" for="multi-day">Многодневная</label>
-        <span class="glider"></span>
-      </div>
+      </section>
       
-      <div class="members-count">
-        <button class="btn week-day" type="button">ПН</button>
-        <button class="btn btn-default week-day" type="button">ВТ</button>
-        <button class="btn btn-default week-day" type="button">СР</button>
-        <button class="btn btn-default week-day" type="button">ЧТ</button>
-        <button class="btn btn-default week-day" type="button">ПТ</button>
-        <button class="btn btn-default week-day" type="button">СБ</button>
-        <button class="btn btn-default week-day" type="button">ВС</button>
-      </div>
-
-      <div class="row">
-        <div class="row-item">
-          <h3 class="sub-head sub-head-nomrg">Начало</h3>
-          <div class="pic-input pic-input-clock">
-            <input type="text" name="start-time" id="start-time" placeholder="ЧЧ:ММ">
+      <section class="key-block key-block-hide block-parameters">
+        <button class="hide-block"></button>
+        <h2 class="block-heading heading-question">Расписание экскурсии</h2>
+  
+        <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
+        <div class="tabs">
+          <input class="input-tab" type="radio" id="day-1" name="duration" value="day-1"/>
+          <label class="tab" for="day-1">Дневная</label>
+          <input class="input-tab" type="radio" id="multi-day-1" name="duration"  value="multi-day-1" checked/>
+          <label class="tab" for="multi-day-1">Многодневная</label>
+          <span class="glider"></span>
+        </div>
+        
+        <div class="row row-input">
+          <div class="row-item">
+            <h3 class="sub-head sub-head-nomrg">Дата начала</h3>
+            <div class="pic-input pic-input-calendar">
+              <input type="text" name="date-start" id="date-start" placeholder="ДД/ММ/ГГГГ">
+            </div>
+          </div>
+          <div class="row-item">
+            <h3 class="sub-head sub-head-nomrg">Время начала</h3>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="time-start" id="time-start" placeholder="ЧЧ:ММ">
+            </div>
           </div>
         </div>
-        <div class="row-item">
-          <h3 class="sub-head sub-head-nomrg">Окончание</h3>
-          <div class="pic-input pic-input-clock">
-            <input type="text" name="end-time" id="end-time" placeholder="ЧЧ:ММ">
+  
+        <div class="row row-input">
+          <div class="row-item">
+            <h3 class="sub-head sub-head-nomrg">Дата окончания</h3>
+            <div class="pic-input pic-input-calendar">
+              <input type="text" name="date-end" id="date-end" placeholder="ДД/ММ/ГГГГ">
+            </div>
+          </div>
+          <div class="row-item">
+            <h3 class="sub-head sub-head-nomrg">Время окончания</h3>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="time-end" id="time-end" placeholder="ЧЧ:ММ">
+            </div>
           </div>
         </div>
-      </div>
-
-      <h3 class="sub-head">Повторять</h3>
-      <div class="select diff-select">
-        <input type="radio" name="repeat">
-        <i class="toggle icon icon-arrow-down"></i>
-        <i class="toggle icon icon-arrow-up"></i>
-        <span class="placeholder">Срок</span>
-        <label class="option">
+  
+        <h3 class="sub-head">Повторять</h3>
+        <div class="select diff-select">
           <input type="radio" name="repeat">
-          <span class="title">3 месяца</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="repeat">
-          <span class="title">6 месяцев</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="repeat">
-          <span class="title">9 месяцев</span>
-        </label>
-      </div>
-
-      <div class="row currency-cont">
-        <div class="row-item row-item-grow">
-          <h3 class="sub-head">Стоимость</h3>
-          <input type="text" name="price" id="price" placeholder="Введите стоимость">
+          <i class="toggle icon icon-arrow-down"></i>
+          <i class="toggle icon icon-arrow-up"></i>
+          <span class="placeholder">Срок</span>
+          <label class="option">
+            <input type="radio" name="repeat">
+            <span class="title">3 месяца</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="repeat">
+            <span class="title">6 месяцев</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="repeat">
+            <span class="title">9 месяцев</span>
+          </label>
         </div>
-        <div class="row-item row-item-shrink">
-          <h3 class="sub-head">Валюта</h3>
-          <div class="select diff-select">
-            <input type="radio" name="currency">
-            <i class="toggle icon icon-arrow-down"></i>
-            <i class="toggle icon icon-arrow-up"></i>
-            <span class="placeholder">₽</span>
-            <label class="option">
-              <input type="radio" name="currency" value="₽">
-              <span class="title">₽</span>
-            </label>
-            <label class="option">
-              <input type="radio" name="currency" value="€">
-              <span class="title">€</span>
-            </label>
-            <label class="option">
-              <input type="radio" name="currency" value="$">
-              <span class="title">$</span>
-            </label>
+  
+        <div class="row currency-cont">
+          <div class="row-item row-item-grow">
+            <h3 class="sub-head">Стоимость</h3>
+            <input type="text" name="price-1" id="price-1" placeholder="Введите стоимость">
+          </div>
+          <div class="row-item row-item-shrink">
+            <h3 class="sub-head">Валюта</h3>
+            <div class="select diff-select">
+              <input type="radio" name="currency">
+              <i class="toggle icon icon-arrow-down"></i>
+              <i class="toggle icon icon-arrow-up"></i>
+              <span class="placeholder">₽</span>
+              <label class="option">
+                <input type="radio" name="currency" value="₽">
+                <span class="title">₽</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="currency" value="€">
+                <span class="title">€</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="currency" value="$">
+                <span class="title">$</span>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-
-
-      <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
-      
-      <div class="choosen-date">
-        <h3 class="sub-head key-block-hide">
-          <button class="hide-block"></button>
-          Выбранное время
-        </h3>
-        <ul class="choosen-dates">
-          <li class="choosen-date-item">
-            ПН 07:30-10:30 — 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-    <section class="key-block">
-      <div class="choosen-date">
-        <h3 class="sub-head key-block-hide key-block-hide--closed">
-          <button class="hide-block"></button>
-          Выбранное время
-        </h3>
-        <ul class="choosen-dates">
-          <li class="choosen-date-item">
-            ПН 07:30-10:30 — 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-          <li class="choosen-date-item">
-            ПН 07:30-10:30 — 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-          <li class="choosen-date-item">
-            ПН 07:30-10:30 — 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-          <li class="choosen-date-item">
-            ПН 07:30-10:30 — 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-          <li class="choosen-date-item">
-            ПН 07:30-10:30 — 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-        </ul>
-        <button class="btn btn-add-day" type="button">Показать все даты</button>
-      </div>
-    </section>
-
-    
-    <section class="key-block key-block-hide block-parameters">
-      <button class="hide-block"></button>
-      <h2 class="block-heading heading-question">Расписание экскурсии</h2>
-
-      <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
-      <div class="tabs">
-        <input class="input-tab" type="radio" id="day-1" name="duration" value="day-1"/>
-        <label class="tab" for="day-1">Дневная</label>
-        <input class="input-tab" type="radio" id="multi-day-1" name="duration"  value="multi-day-1" checked/>
-        <label class="tab" for="multi-day-1">Многодневная</label>
-        <span class="glider"></span>
-      </div>
-      
-      <div class="row row-input">
-        <div class="row-item">
-          <h3 class="sub-head sub-head-nomrg">Дата начала</h3>
-          <div class="pic-input pic-input-calendar">
-            <input type="text" name="date-start" id="date-start" placeholder="ДД/ММ/ГГГГ">
-          </div>
+  
+  
+        <button class="btn btn-add-day" type="button">Добавить дату <img src="./img/add-pick.svg" alt="Добавить дату"></button>
+        
+        <div class="choosen-date">
+          <h3 class="sub-head key-block-hide">
+            <button class="hide-block"></button>
+            Выбранная дата
+          </h3>
+          <ul class="choosen-dates">
+            <li class="choosen-date-item">
+              22/07/2021 07:30-29/07/2021 10:30 — 10 300₽
+              <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+            </li>
+          </ul>
         </div>
-        <div class="row-item">
-          <h3 class="sub-head sub-head-nomrg">Время начала</h3>
-          <div class="pic-input pic-input-clock">
-            <input type="text" name="time-start" id="time-start" placeholder="ЧЧ:ММ">
-          </div>
-        </div>
-      </div>
+      </section>
 
-      <div class="row row-input">
-        <div class="row-item">
-          <h3 class="sub-head sub-head-nomrg">Дата окончания</h3>
-          <div class="pic-input pic-input-calendar">
-            <input type="text" name="date-end" id="date-end" placeholder="ДД/ММ/ГГГГ">
-          </div>
-        </div>
-        <div class="row-item">
-          <h3 class="sub-head sub-head-nomrg">Время окончания</h3>
-          <div class="pic-input pic-input-clock">
-            <input type="text" name="time-end" id="time-end" placeholder="ЧЧ:ММ">
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="side-block">
+      <h1>Данные экскурсии</h1>
+    </div>
 
-      <h3 class="sub-head">Повторять</h3>
-      <div class="select diff-select">
-        <input type="radio" name="repeat">
-        <i class="toggle icon icon-arrow-down"></i>
-        <i class="toggle icon icon-arrow-up"></i>
-        <span class="placeholder">Срок</span>
-        <label class="option">
-          <input type="radio" name="repeat">
-          <span class="title">3 месяца</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="repeat">
-          <span class="title">6 месяцев</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="repeat">
-          <span class="title">9 месяцев</span>
-        </label>
-      </div>
-
-      <div class="row currency-cont">
-        <div class="row-item row-item-grow">
-          <h3 class="sub-head">Стоимость</h3>
-          <input type="text" name="price-1" id="price-1" placeholder="Введите стоимость">
-        </div>
-        <div class="row-item row-item-shrink">
-          <h3 class="sub-head">Валюта</h3>
-          <div class="select diff-select">
-            <input type="radio" name="currency">
-            <i class="toggle icon icon-arrow-down"></i>
-            <i class="toggle icon icon-arrow-up"></i>
-            <span class="placeholder">₽</span>
-            <label class="option">
-              <input type="radio" name="currency" value="₽">
-              <span class="title">₽</span>
-            </label>
-            <label class="option">
-              <input type="radio" name="currency" value="€">
-              <span class="title">€</span>
-            </label>
-            <label class="option">
-              <input type="radio" name="currency" value="$">
-              <span class="title">$</span>
-            </label>
-          </div>
-        </div>
-      </div>
-
-
-      <button class="btn btn-add-day" type="button">Добавить дату <img src="./img/add-pick.svg" alt="Добавить дату"></button>
-      
-      <div class="choosen-date">
-        <h3 class="sub-head key-block-hide">
-          <button class="hide-block"></button>
-          Выбранная дата
-        </h3>
-        <ul class="choosen-dates">
-          <li class="choosen-date-item">
-            22/07/2021 07:30-29/07/2021 10:30 — 10 300₽
-            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
-          </li>
-        </ul>
-      </div>
-    </section>
   </main>
   <!-- <div class="select" for="slct">
     <select name="slct" id="slct">
