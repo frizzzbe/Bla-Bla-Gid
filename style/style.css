@@ -335,6 +335,40 @@ input[type="radio"]:checked + label {
   background-color: #F2F2F2;
 }
 
+.btn-send {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  padding: 9px 16px;
+  border: none;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  background: #443296;
+  color: #FFFFFF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-send img {
+  margin-left: 8px;
+}
+
+.btn-send:hover {
+  background-color: #2D3161;
+}
+
+.btn-send:active {
+  background-color: #171932;
+}
+
+.btn-send:disabled {
+  background-color: #E0E0E0;
+}
 
 /* common styles */
 
@@ -410,6 +444,15 @@ input[type="radio"]:checked + label {
   background: #FFFFFF;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+}
+
+.side-block {
+  background: #FBFBFF;
+}
+
+.side-block .key-block {
+  box-shadow: none;
+  background: #FBFBFF;
 }
 
 .hide-block {
@@ -584,7 +627,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .load-images {
-  max-width: 310px;
+  /* max-width: 310px; */
   margin-top: 16px;
   display: flex;
   gap: 8px;
@@ -1045,7 +1088,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.key-block-hide--closed .excurs-details {
+.excurs-day.key-block-hide--closed .excurs-details {
   display: block;
 }
 
@@ -1265,22 +1308,119 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-left: 8px;
 }
 
+.side-block .key-block {
+  padding: 26px 10px;
+}
+
+.guide-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.guide-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.guid-data {
+  font-size: 12px;
+  line-height: 14px;
+  color: #171932;
+}
+
+.guid-name {
+  font-weight: bold;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.guid-status {
+  font-weight: normal;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.side-title {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #2D3161;
+}
+
+.side-paragraph {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: 110px;
+  
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171932;
+
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.side-read-more {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.momental-label.side-paragraph,
+.side-paragraph.sub-status {
+  position: relative;
+}
+
+.side-images {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.side-images .img-item {
+  width: 32px;
+}
+.side-images .image-object {
+  height: 32px;
+}
+
+.side-cover {
+  margin-top: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+}
+
+.side-btn.btn-send {
+  margin-top: 20px;
+}
 
 
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
-    gap: 32px;
-    padding-right: 32px;
+    /* gap: 32px; */
     margin-top: 0;
   }
+
+  /* .side-block {
+    padding-right: 32px;
+  } */
 
   .main-content > *{
     padding-top: 24px;
   }
   
   .main-content {
-    grid-template-columns: 264px 1fr 264px;
+    grid-template-columns: 264px 1fr 340px;
     grid-template-rows: 1fr auto;
   }
 
@@ -1319,7 +1459,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1024px){
   .main-content {
-    grid-template-columns: 264px 1fr 264px;
+    grid-template-columns: 264px 1fr 340px;
     grid-template-rows: 1fr;
   }
 
