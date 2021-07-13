@@ -212,6 +212,10 @@ input[type="checkbox"]:checked + label::before {
   flex-grow: 1;
 }
 
+.row-input {
+  margin-top: 16px;
+}
+
 .tabs {
   width: 100%;
   max-width: 279px;
@@ -496,6 +500,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background: url('../img/clock-gray.svg');
 }
 
+.pic-input-calendar::before {
+  background: url('../img/calendar-gray.svg');
+}
+
 .horisont-scroll {
   margin-top: 10px;
   display: flex;
@@ -652,7 +660,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .members-count {
   display: flex;
   justify-content: space-evenly;
-  margin: 16px auto;
+  margin: 24px auto 16px;
 }
 
 .members-count .counter-btn {
@@ -1181,7 +1189,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .currency-cont .row-item input[type="text"] {
-  margin-top: 0;
+  padding: 8px 16px;
 }
 
 .currency-cont span.placeholder,
@@ -1191,7 +1199,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 
 .currency-cont .diff-select,
-.currency-cont .pic-input {
+.currency-cont .row-item input[type="text"] {
   margin-top: 8px;
   /* height: 40px; */
 }

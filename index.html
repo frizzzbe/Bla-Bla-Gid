@@ -481,14 +481,13 @@
 
       <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
       <div class="tabs">
-        <input class="input-tab" type="radio" id="day" name="duration" value="day" checked />
+        <input class="input-tab" type="radio" id="day" name="duration-1" value="day" checked />
         <label class="tab" for="day">Дневная</label>
-        <input class="input-tab" type="radio" id="multi-day" name="duration"  value="multi-day"/>
+        <input class="input-tab" type="radio" id="multi-day" name="duration-1"  value="multi-day"/>
         <label class="tab" for="multi-day">Многодневная</label>
         <span class="glider"></span>
       </div>
       
-      <h3 class="sub-head">Количество участников</h3>
       <div class="members-count">
         <button class="btn week-day" type="button">ПН</button>
         <button class="btn btn-default week-day" type="button">ВТ</button>
@@ -537,9 +536,7 @@
       <div class="row currency-cont">
         <div class="row-item row-item-grow">
           <h3 class="sub-head">Стоимость</h3>
-          <div class="pic-input">
-            <input type="text" name="price" id="price" placeholder="Введите стоимость">
-          </div>
+          <input type="text" name="price" id="price" placeholder="Введите стоимость">
         </div>
         <div class="row-item row-item-shrink">
           <h3 class="sub-head">Валюта</h3>
@@ -565,7 +562,7 @@
       </div>
 
 
-      <button class="btn btn-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
+      <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
       
       <div class="choosen-date">
         <h3 class="sub-head key-block-hide">
@@ -611,6 +608,115 @@
           </li>
         </ul>
         <button class="btn btn-add-day" type="button">Показать все даты</button>
+      </div>
+    </section>
+
+    
+    <section class="key-block key-block-hide block-parameters">
+      <button class="hide-block"></button>
+      <h2 class="block-heading heading-question">Расписание экскурсии</h2>
+
+      <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
+      <div class="tabs">
+        <input class="input-tab" type="radio" id="day-1" name="duration" value="day-1"/>
+        <label class="tab" for="day-1">Дневная</label>
+        <input class="input-tab" type="radio" id="multi-day-1" name="duration"  value="multi-day-1" checked/>
+        <label class="tab" for="multi-day-1">Многодневная</label>
+        <span class="glider"></span>
+      </div>
+      
+      <div class="row row-input">
+        <div class="row-item">
+          <h3 class="sub-head sub-head-nomrg">Дата начала</h3>
+          <div class="pic-input pic-input-calendar">
+            <input type="text" name="date-start" id="date-start" placeholder="ДД/ММ/ГГГГ">
+          </div>
+        </div>
+        <div class="row-item">
+          <h3 class="sub-head sub-head-nomrg">Время начала</h3>
+          <div class="pic-input pic-input-clock">
+            <input type="text" name="time-start" id="time-start" placeholder="ЧЧ:ММ">
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-input">
+        <div class="row-item">
+          <h3 class="sub-head sub-head-nomrg">Дата окончания</h3>
+          <div class="pic-input pic-input-calendar">
+            <input type="text" name="date-end" id="date-end" placeholder="ДД/ММ/ГГГГ">
+          </div>
+        </div>
+        <div class="row-item">
+          <h3 class="sub-head sub-head-nomrg">Время окончания</h3>
+          <div class="pic-input pic-input-clock">
+            <input type="text" name="time-end" id="time-end" placeholder="ЧЧ:ММ">
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-head">Повторять</h3>
+      <div class="select diff-select">
+        <input type="radio" name="repeat">
+        <i class="toggle icon icon-arrow-down"></i>
+        <i class="toggle icon icon-arrow-up"></i>
+        <span class="placeholder">Срок</span>
+        <label class="option">
+          <input type="radio" name="repeat">
+          <span class="title">3 месяца</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="repeat">
+          <span class="title">6 месяцев</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="repeat">
+          <span class="title">9 месяцев</span>
+        </label>
+      </div>
+
+      <div class="row currency-cont">
+        <div class="row-item row-item-grow">
+          <h3 class="sub-head">Стоимость</h3>
+          <input type="text" name="price-1" id="price-1" placeholder="Введите стоимость">
+        </div>
+        <div class="row-item row-item-shrink">
+          <h3 class="sub-head">Валюта</h3>
+          <div class="select diff-select">
+            <input type="radio" name="currency">
+            <i class="toggle icon icon-arrow-down"></i>
+            <i class="toggle icon icon-arrow-up"></i>
+            <span class="placeholder">₽</span>
+            <label class="option">
+              <input type="radio" name="currency" value="₽">
+              <span class="title">₽</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="currency" value="€">
+              <span class="title">€</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="currency" value="$">
+              <span class="title">$</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="btn btn-add-day" type="button">Добавить дату <img src="./img/add-pick.svg" alt="Добавить дату"></button>
+      
+      <div class="choosen-date">
+        <h3 class="sub-head key-block-hide">
+          <button class="hide-block"></button>
+          Выбранная дата
+        </h3>
+        <ul class="choosen-dates">
+          <li class="choosen-date-item">
+            22/07/2021 07:30-29/07/2021 10:30 — 10 300₽
+            <button class="delete-item" type="button"><img src="./img/close-pick.svg" alt="Удалить дату" width="14px" height="14px"></button>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
