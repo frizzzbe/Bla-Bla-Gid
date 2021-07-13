@@ -961,6 +961,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   border: 1px solid #443296;
 }
 
+.transportation .img-item--select .image-object svg path {
+  stroke: #443296;
+}
+
+.transportation .image-object svg path {
+  stroke: #E0E0E0;
+}
+
 .transportation .image-object {
   height: 70px;
   display: flex;
