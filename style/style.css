@@ -91,24 +91,26 @@ textarea::-webkit-resizer{
   display: none;
 }
 
-::-moz-resizer { 
+textarea::-moz-resizer {
   display: none;
 }
 
 .area-wrapper {
+  font-size: 0;
   position: relative;
   display: block;
 }
+
 .area-wrapper::after {
   content: "";
   display: block;
-  background: url('../img/resizer.svg') no-repeat;
+  background: url('../img/resizer.svg') no-repeat #fff;
   background-size: cover;
   width: 24px;
   height: 24px;
   position: absolute;
-  bottom: 7px;
-  right: 0;
+  bottom: 1px;
+  right: 2px;
   pointer-events: none;
 }
 
@@ -405,7 +407,7 @@ input[type="radio"]:checked + label {
   width: 226px;
   width: 100%;
   padding: 24px 26px;
-  
+
   transition: left 0.3s;
 }
 
@@ -1085,6 +1087,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .transportation .img-item--select .image-title {
   font-weight: 600;
   color: #443296;
+}
+
+.transportation {
+  scrollbar-color: #443296 #DBDFFA;
+  scrollbar-width: 12px;
 }
 
 .transportation::-webkit-scrollbar {
