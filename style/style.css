@@ -392,6 +392,98 @@ input[type="radio"]:checked + label {
   min-width: 0;
 }
 
+.mob-menu {
+  top: 0;
+  left: -110%;
+
+  background-color: #fff;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 226px;
+  width: 100%;
+  padding: 24px 26px;
+  
+  transition: left 0.3s;
+}
+
+.mob-menu--active {
+  left: 0;
+}
+
+.mob-nav-close {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+
+  border: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #171932;
+  margin-bottom: 16px;
+}
+
+.mob-nav-close img { 
+  margin-right: 16px;
+}
+
+.mob-nav {
+  padding-top: 16px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.mob-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #171932;
+}
+
+.mob-nav--active .nav-link {
+  font-weight: 600;
+  color: #443296;
+}
+
+.mob-nav-item .nav-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border-radius: 14px;
+}
+
+.mob-nav--active .nav-icon {
+  background: #443296;
+}
+
+.nav-icon svg path{
+  stroke: #443296;
+  stroke-width: 1px;
+}
+
+.mob-nav--active .nav-icon svg path{
+  stroke: #fff;
+}
+
+
 .desktop-nav {
   position: sticky;
   top: 58px;
@@ -415,6 +507,8 @@ input[type="radio"]:checked + label {
   height: 40px;
   padding: 12px 9px;
   background: #443296;
+  border: none;
+  cursor: pointer;
   border-radius: 14px;
   background-image: url('../img/burger-menu.svg');
   background-repeat: no-repeat;
