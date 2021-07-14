@@ -476,15 +476,27 @@ input[type="radio"]:checked + label {
   background: #443296;
 }
 
-.nav-icon svg path{
+.nav-icon svg path {
   stroke: #443296;
-  stroke-width: 1px;
+  stroke-width: 2px;
 }
 
 .mob-nav--active .nav-icon svg path{
   stroke: #fff;
+  stroke-width: 1px;
 }
 
+.mob-nav-create {
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.mob-nav-create img {
+  margin-right: 8px;
+}
 
 .desktop-nav {
   position: sticky;
