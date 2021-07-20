@@ -15,7 +15,7 @@
     </a>
   </header>
   <!-- добавить mob-menu--active для показа меню -->
-  <div class="mob-menu mob-menu--active">
+  <div class="mob-menu">
     <button class="mob-nav-close" type="button"><img src="./img/nav-close.svg" alt="Закрыть меню" width="40px" height="40px">Закрыть</button>
     <nav class="mob-nav">
       <ul>
@@ -97,7 +97,15 @@
       <!-- класс "key-block-hide--closed" для section переворачивает стрелку -->
       <section class="key-block key-block-hide">
         <button class="hide-block"></button>
-        <h2 class="block-heading heading-question">Общая информация</h2>
+        <div class="question-wrap">
+          <h2 class="block-heading heading-question">Общая информация</h2>
+          <!-- question-tip--open открыть подсказку -->
+          <div class="question-tip question-tip--open">
+            <p class="question-desc">Обложка — это первое, что увидят ваши клиенты.<br>
+              Загружайте только качественные фотографии</p>
+            <button type="button" class="tip-close"></button>
+          </div>
+        </div>
   
         <h3 class="sub-head">Название экскурсии</h3>
         <input type="text" name="title" id="title" placeholder="Введите название">
@@ -194,8 +202,15 @@
   
       <section class="key-block key-block-hide block-parameters">
         <button class="hide-block"></button>
-        <h2 class="block-heading heading-question">Состав группы</h2>
-  
+        <div class="question-wrap">
+          <h2 class="block-heading heading-question">Состав группы</h2>
+          <div class="question-tip">
+            <p class="question-desc">Обложка — это первое, что увидят ваши клиенты.<br>
+              Загружайте только качественные фотографии</p>
+            <button type="button" class="tip-close"></button>
+          </div>
+        </div>
+        
         <h3 class="sub-head">Выберите параметры экскурсии</h3>
         <div class="tabs">
           <input class="input-tab" type="radio" id="radio-1" name="tabs" value="whole" checked />
@@ -243,8 +258,15 @@
   
       <section class="key-block key-block-hide">
         <button class="hide-block"></button>
-        <h2 class="block-heading heading-question">Параметры экскурсии</h2>
-  
+        <div class="question-wrap">
+          <h2 class="block-heading heading-question">Параметры экскурсии</h2>
+          <div class="question-tip">
+            <p class="question-desc">Обложка — это первое, что увидят ваши клиенты.<br>
+              Загружайте только качественные фотографии</p>
+            <button type="button" class="tip-close"></button>
+          </div>
+        </div>
+        
         <h3 class="sub-head">Сложность экскурсии</h3>
         <div class="select diff-select">
           <input type="radio" name="difficulty">
@@ -422,8 +444,15 @@
   
       <section class="key-block key-block-hide">
         <button class="hide-block"></button>
-        <h2 class="block-heading heading-question">Маршрут экскурсии</h2>
-  
+        <div class="question-wrap">
+          <h2 class="block-heading heading-question">Маршрут экскурсии</h2>
+          <div class="question-tip">
+            <p class="question-desc">Обложка — это первое, что увидят ваши клиенты.<br>
+              Загружайте только качественные фотографии</p>
+            <button type="button" class="tip-close"></button>
+          </div>
+        </div>
+        
         <h3 class="sub-head sub-head-nomrg">Маршрут экскурсии и параметры для каждой точки</h3>
   
         <div class="excurs-days">
@@ -612,8 +641,15 @@
   
       <section class="key-block key-block-hide block-parameters">
         <button class="hide-block"></button>
-        <h2 class="block-heading heading-question">Расписание экскурсии</h2>
-  
+        <div class="question-wrap">
+          <h2 class="block-heading heading-question">Расписание экскурсии</h2>
+          <div class="question-tip">
+            <p class="question-desc">Обложка — это первое, что увидят ваши клиенты.<br>
+              Загружайте только качественные фотографии</p>
+            <button type="button" class="tip-close"></button>
+          </div>
+        </div>
+        
         <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
         <div class="tabs">
           <input class="input-tab" type="radio" id="day" name="duration-1" value="day" checked />
@@ -747,8 +783,15 @@
       
       <section class="key-block key-block-hide block-parameters">
         <button class="hide-block"></button>
-        <h2 class="block-heading heading-question">Расписание экскурсии</h2>
-  
+        <div class="question-wrap">
+          <h2 class="block-heading heading-question">Расписание экскурсии</h2>
+          <div class="question-tip">
+            <p class="question-desc">Обложка — это первое, что увидят ваши клиенты.<br>
+              Загружайте только качественные фотографии</p>
+            <button type="button" class="tip-close"></button>
+          </div>
+        </div>
+        
         <h3 class="sub-head sub-head-nomrg">Продолжительность экскурсии</h3>
         <div class="tabs">
           <input class="input-tab" type="radio" id="day-1" name="duration" value="day-1"/>

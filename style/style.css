@@ -149,7 +149,10 @@ input[type="checkbox"]:checked + label::before {
   background-position: center;
 }
 
-
+input[type="checkbox"]:disabled + label::before {
+  background-color: #E0E0E0;
+  border: 1px solid #E0E0E0;
+}
 
 .multi-pick {
   display: flex;
@@ -425,6 +428,7 @@ input[type="radio"]:checked + label {
   font-size: 18px;
   line-height: 26px;
   color: #171932;
+  cursor: pointer;
   margin-bottom: 16px;
 }
 
@@ -609,6 +613,38 @@ input[type="radio"]:checked + label {
   background-size: cover;
   bottom: 4px;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+.question-wrap {
+  position: relative;
+}
+
+.question-tip {
+  display: none;
+  position: absolute;
+  max-width: 400px;
+  padding: 32px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  z-index: 110;box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.question-tip--open {
+  display: block;
+}
+
+.tip-close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  right: 8px;
+  background: url('../img/close-help.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
   cursor: pointer;
 }
 
