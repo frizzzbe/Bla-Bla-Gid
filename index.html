@@ -175,47 +175,52 @@
             <button type="button" class="tip-close"></button>
           </div>
         </div>
-  
-        <h3 class="sub-head">Название экскурсии</h3>
-        <input type="text" name="title" id="title" placeholder="Введите название">
-  
-        <h3 class="sub-head">Описание экскурсии</h3>
-        <div class="area-wrapper">
-          <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
-        </div>
-        <div class="area-counter"><span class="counter-current">0</span>/5000</div>
-  
-        <input type="checkbox" name="momental" id="momental">
-        <label class="momental-label" for="momental">Моментальное бронирование</label>
-        <input type="checkbox" name="request" id="request">
-        <label for="request">Запрос экскурсии</label>
         
-        <h3 class="sub-head">Откуда</h3>
-        <div class="pic-input pic-input-address">
-          <input type="text" name="from" id="from" placeholder="Введите адрес">
+        <div class="key-block-split">
+          <div class="key-split-item">
+            <h3 class="sub-head">Название экскурсии</h3>
+            <input type="text" name="title" id="title" placeholder="Введите название">
+      
+            <h3 class="sub-head">Описание экскурсии</h3>
+            <div class="area-wrapper">
+              <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Расскажите о экскурсии.&#10;Минимум - 500 слов" resize="resize-y"></textarea>
+            </div>
+            <div class="area-counter"><span class="counter-current">0</span>/5000</div>
+      
+            <input type="checkbox" name="momental" id="momental">
+            <label class="momental-label" for="momental">Моментальное бронирование</label>
+            <input type="checkbox" name="request" id="request">
+            <label for="request">Запрос экскурсии</label>
+          </div>
+          <div class="key-split-item">
+            <h3 class="sub-head">Откуда</h3>
+            <div class="pic-input pic-input-address">
+              <input type="text" name="from" id="from" placeholder="Введите адрес">
+            </div>
+            <a href="#" class="show-map">Показать на карте</a>
+            <h3 class="sub-head">Куда</h3>
+            <div class="pic-input pic-input-address">
+              <input type="text" name="where" id="where" placeholder="Введите адрес">
+            </div>
+            <a href="#" class="show-map">Показать на карте</a>
+      
+            <input type="checkbox" name="one-city" id="one-city">
+            <label for="one-city">Проходит в одном городе</label>
+      
+            <h3 class="sub-head">Города в пути</h3>
+            <div class="multi-pick">
+              <button class="pick-add multi-pick-item" type="button">Добавить</button>
+              <div class="multi-pick-item">Воронеж</div>
+              <div class="multi-pick-item">Сочи</div>
+            </div>
+            
+            <h3 class="sub-head">Место встречи</h3>
+            <div class="pic-input pic-input-address">
+              <input type="text" name="meet" id="meet" placeholder="Введите место встречи">
+            </div>
+            <a href="#" class="show-map">Показать на карте</a>
+          </div>
         </div>
-        <a href="#" class="show-map">Показать на карте</a>
-        <h3 class="sub-head">Куда</h3>
-        <div class="pic-input pic-input-address">
-          <input type="text" name="where" id="where" placeholder="Введите адрес">
-        </div>
-        <a href="#" class="show-map">Показать на карте</a>
-  
-        <input type="checkbox" name="one-city" id="one-city">
-        <label for="one-city">Проходит в одном городе</label>
-  
-        <h3 class="sub-head">Города в пути</h3>
-        <div class="multi-pick">
-          <button class="pick-add multi-pick-item" type="button">Добавить</button>
-          <div class="multi-pick-item">Воронеж</div>
-          <div class="multi-pick-item">Сочи</div>
-        </div>
-        
-        <h3 class="sub-head">Место встречи</h3>
-        <div class="pic-input pic-input-address">
-          <input type="text" name="meet" id="meet" placeholder="Введите место встречи">
-        </div>
-        <a href="#" class="show-map">Показать на карте</a>
         
         <h3 class="sub-head heading-question">Фотографии экскурсии</h3>
         <div class="horisont-scroll">
@@ -280,45 +285,51 @@
           </div>
         </div>
         
-        <h3 class="sub-head">Выберите параметры экскурсии</h3>
-        <div class="tabs">
-          <input class="input-tab" type="radio" id="radio-1" name="tabs" value="whole" checked />
-          <label class="tab" for="radio-1">Групповая</label>
-          <input class="input-tab" type="radio" id="radio-2" name="tabs"  value="today"/>
-          <label class="tab" for="radio-2">Индивидуальная</label>
-          <span class="glider"></span>
+        <div class="key-block-split">
+          <div class="key-split-item">  
+            <h3 class="sub-head">Выберите параметры экскурсии</h3>
+            <div class="tabs">
+              <input class="input-tab" type="radio" id="radio-1" name="tabs" value="whole" checked />
+              <label class="tab" for="radio-1">Групповая</label>
+              <input class="input-tab" type="radio" id="radio-2" name="tabs"  value="today"/>
+              <label class="tab" for="radio-2">Индивидуальная</label>
+              <span class="glider"></span>
+            </div>
+            
+            <h3 class="sub-head">Количество участников</h3>
+            <div class="counter">
+              <button class="btn btn-gray counter-btn counter-btn--dist" type="button"></button>
+              <span class="counter-value">10</span>
+              <button class="btn counter-btn counter-btn--add" type="button"></button>
+            </div>
+            <div class="members-count">
+              <button class="btn counter-btn" type="button">10</button>
+              <button class="btn btn-default counter-btn" type="button">20</button>
+              <button class="btn btn-default counter-btn" type="button">30</button>
+              <button class="btn btn-default counter-btn" type="button">50</button>
+              <button class="btn btn-default counter-btn" type="button">70</button>
+              <button class="btn btn-default counter-btn" type="button">100</button>
+            </div>
+          </div>
+    
+          <div class="key-split-item">
+            <h3 class="sub-head">Возраст участников</h3>
+            <div class="members-age">
+              <button class="btn btn-default counter-btn" type="button">6+</button>
+              <button class="btn btn-default counter-btn" type="button">12+</button>
+              <button class="btn btn-default counter-btn" type="button">18-30</button>
+              <button class="btn btn-default counter-btn" type="button">30+</button>
+              <button class="btn btn-default counter-btn" type="button">40+</button>
+              <button class="btn btn-default counter-btn" type="button">50+</button>
+              <button class="btn btn-default counter-btn" type="button">60+</button>
+              <button class="btn btn-default counter-btn" type="button">70+</button>
+            </div>
+      
+            <button class="btn counter-any" type="button">Любой</button>
+            <input type="checkbox" name="kids-0-6" id="kids-0-6" checked>
+            <label for="kids-0-6">можно с детьми от 0 до 6 лет</label>
+          </div>
         </div>
-        
-        <h3 class="sub-head">Количество участников</h3>
-        <div class="counter">
-          <button class="btn btn-gray counter-btn counter-btn--dist" type="button"></button>
-          <span class="counter-value">10</span>
-          <button class="btn counter-btn counter-btn--add" type="button"></button>
-        </div>
-        <div class="members-count">
-          <button class="btn counter-btn" type="button">10</button>
-          <button class="btn btn-default counter-btn" type="button">20</button>
-          <button class="btn btn-default counter-btn" type="button">30</button>
-          <button class="btn btn-default counter-btn" type="button">50</button>
-          <button class="btn btn-default counter-btn" type="button">70</button>
-          <button class="btn btn-default counter-btn" type="button">100</button>
-        </div>
-  
-        <h3 class="sub-head">Возраст участников</h3>
-        <div class="members-age">
-          <button class="btn btn-default counter-btn" type="button">6+</button>
-          <button class="btn btn-default counter-btn" type="button">12+</button>
-          <button class="btn btn-default counter-btn" type="button">18-30</button>
-          <button class="btn btn-default counter-btn" type="button">30+</button>
-          <button class="btn btn-default counter-btn" type="button">40+</button>
-          <button class="btn btn-default counter-btn" type="button">50+</button>
-          <button class="btn btn-default counter-btn" type="button">60+</button>
-          <button class="btn btn-default counter-btn" type="button">70+</button>
-        </div>
-  
-        <button class="btn counter-any" type="button">Любой</button>
-        <input type="checkbox" name="kids-0-6" id="kids-0-6" checked>
-        <label for="kids-0-6">можно с детьми от 0 до 6 лет</label>
       </section>
   
       <section class="key-block">
@@ -465,7 +476,7 @@
         </div>
   
         <h3 class="sub-head">Какое расстояние пройдут участники?</h3>
-        <input type="text" name="distant" id="distant" placeholder="Введите расстояние в км">
+        <input class="short-txt" type="text" name="distant" id="distant" placeholder="Введите расстояние в км">
   
         <h3 class="sub-head">Проживание</h3>
         <div class="select diff-select">
@@ -508,7 +519,7 @@
         </div>
   
         <h3 class="sub-head">Что взять с собой участникам?</h3>
-        <input type="text" name="stuff" id="stuff" placeholder="Например: обувь, фонарик">
+        <input class="short-txt" type="text" name="stuff" id="stuff" placeholder="Например: обувь, фонарик">
       </section> 
   
       <section class="key-block key-block-hide">

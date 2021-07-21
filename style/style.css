@@ -69,6 +69,11 @@ input[type="text"]::placeholder {
   color: #828282;
 }
 
+input[type="text"].short-txt {
+  max-width: 310px;
+  padding: 8px 20px;
+}
+
 textarea {
   width: 100%;
   height: 138px;
@@ -682,6 +687,18 @@ input[type="radio"]:checked + label {
   border-radius: 8px;
 }
 
+.key-block-split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+
+.key-split-item {
+  flex-grow: 1;
+  flex-basis: 308px;
+}
+
 .side-block {
   background: #FBFBFF;
 }
@@ -896,7 +913,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .load-images {
-  /* max-width: 310px; */
+  max-width: 308px;
   margin-top: 16px;
   display: flex;
   gap: 8px;
@@ -1010,6 +1027,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: space-between;
+  margin-top: 16px;
 }
 
 .members-age .counter-btn {
@@ -1019,7 +1037,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   color: #2D3161;
   border-radius: 8px;
   margin: 0;
-  margin-top: 8px;
+  height: 32px;
+  line-height: 100%;
 }
 
 .members-age .counter-btn.btn-active {
@@ -1053,7 +1072,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   overflow: hidden;
   display: block;
   margin: auto;
+  margin-left: 0;
   width: 100%;
+  max-width: 310px;
   /* height: 100%; */
   font-weight: normal;
   font-size: 14px;
@@ -1383,6 +1404,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .excurs-descr {
+  max-width: 470px;
   margin-top: 0;
   font-weight: normal;
   font-size: 10px;
@@ -1483,6 +1505,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background-color: #DBDFFA;
 }
 
+.load-images-short {
+  max-width: none;
+}
+
 .load-images-short label {
   flex-grow: 0;
   margin: auto;
@@ -1491,10 +1517,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   line-height: 20px;
   padding: 6px 40px 6px 19px;
   color: #FFFFFF;
-}
-
-.load-images-short .load-photos::after {
-  right: auto;
 }
 
 .exc-add-day {
@@ -1748,5 +1770,22 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .main-content > * {
     grid-row: auto;
     grid-column: auto;
+  }
+
+  .main-block {
+    padding-top: 32px;
+  }
+
+  .side-block .key-block {
+    padding-top: 8px;
+    margin-top: 0;
+  }
+
+  .key-block {
+    padding: 32px 44px;
+  }
+
+  .key-block-hide .hide-block {
+    right: 44px;
   }
 }
