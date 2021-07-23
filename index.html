@@ -646,77 +646,85 @@
       </section>
   
       <section class="key-block">
+        <!-- При "День 2, 3 и т.д. добавить кнопку ниже" -->
+        <!-- <button class="back-btn" type="button">Назад</button> -->
+
         <h2 class="block-heading">Маршрут экскурсии</h2>
   
         <h3 class="sub-head sub-head-nomrg">Маршрут экскурсии и параметры для каждой точки</h3>
-  
-        <h3 class="sub-head">Название</h3>
-        <input type="text" name="name-way" id="name-way" placeholder="Введите название">
-          
-        <h3 class="sub-head">Описание</h3>
-        <div class="area-wrapper">
-          <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Введите краткое описание места." resize="resize-y"></textarea>
-        </div>
-        <div class="area-counter"><span class="counter-current">0</span>/200</div>
-  
-        <h3 class="sub-head">Адрес экскурсии</h3>
-        <div class="pic-input pic-input-address">
-          <input type="text" name="excurse-addr" id="excurse-addr" placeholder="Введите адрес">
-        </div>
-        <a href="#" class="show-map">Показать на карте</a>
-  
-        <button class="btn btn-add-day btn-invert" type="button">Добавить день <img src="./img/add-pick-blue.svg" alt="Добавить день"></button>
-        
-        <h3 class="sub-head">Фотографии места</h3>
-        <div class="horisont-scroll">
-          <div class="img-item">
-            <div class="image-object">
-              <img src="./img/image.jpg" alt="Фото экскурсии">
+        <div class="key-block-split split-exc">
+          <div class="key-split-item">
+            <h3 class="sub-head">День 1</h3>
+            <input type="text" name="name-way" id="name-way" placeholder="Введите название">
+              
+            <h3 class="sub-head">Описание</h3>
+            <div class="area-wrapper">
+              <textarea class="block-area" name="excursion-desc" id="excursion-desc" cols="30" rows="6" placeholder="Введите краткое описание места." resize="resize-y"></textarea>
             </div>
-            <p class="image-title">Photo.jpg</p>
-            <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+            <div class="area-counter"><span class="counter-current">0</span>/200</div>
           </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
-          </div>
-          <div class="img-item">
-            <div class="image-object"></div>
+          <div class="key-split-item split-add-day">
+            <h3 class="sub-head">Адрес экскурсии</h3>
+            <div class="pic-input pic-input-address">
+              <input type="text" name="excurse-addr" id="excurse-addr" placeholder="Введите адрес">
+            </div>
+            <a href="#" class="show-map">Показать на карте</a>
+      
+            <button class="btn btn-add-day btn-invert" type="button">Добавить день <img src="./img/add-pick-blue.svg" alt="Добавить день"></button>
+            
+            <h3 class="sub-head">Фотографии места</h3>
+            <div class="horisont-scroll">
+              <div class="img-item">
+                <div class="image-object">
+                  <img src="./img/image.jpg" alt="Фото экскурсии">
+                </div>
+                <p class="image-title">Photo.jpg</p>
+                <div class="img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="9px" height="9px"> Удалить</div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+              <div class="img-item">
+                <div class="image-object"></div>
+              </div>
+            </div>
+            <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
+            <div class="load-images load-images-short">
+              <input type="file" name="photos-exc" id="photos-exc" accept=".png,.jpg,.jpeg">
+              <label class="btn load-photos" for="photos-exc">Загрузить фотографии</label>
+            </div>
           </div>
         </div>
-        <p class="excursion-tip">Вы можете загрузить до 10 фотографий в формате PNG, JPG, размер каждой фотографии до 10МБ</p>
-        <div class="load-images load-images-short">
-          <input type="file" name="photos-exc" id="photos-exc" accept=".png,.jpg,.jpeg">
-          <label class="btn load-photos" for="photos-exc">Загрузить фотографии</label>
-        </div>
-        <button class="btn btn-send btn-add-day exc-add-day" type="button">Добавить день <img src="./img/add-pick.svg" alt="Добавить день"></button>
-        <div class="exc-delete img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="16px" height="16px"> Удалить место</div>
+  
+        <!-- <button class="btn btn-send btn-add-day exc-add-day" type="button">Добавить место <img src="./img/add-pick.svg" alt="Добавить место"></button> -->
+        <div class="exc-delete img-item-delete"><img src="./img/delete.svg" alt="Удалить" width="16px" height="16px"> Удалить день</div>
       </section>
   
       <section class="key-block key-block-hide block-parameters">
