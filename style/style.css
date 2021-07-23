@@ -537,7 +537,9 @@ input[type="radio"]:checked + label {
 }
 
 .desktop-nav {
-  position: sticky;
+  position: fixed;
+  transform: translateX(25%);
+  /* position: sticky; */
   top: 58px;
   height: 90vh;
   /* display: none; */
@@ -718,12 +720,12 @@ input[type="radio"]:checked + label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0 40px;
+  gap: 0 30px;
 }
 
 .key-split-item {
   flex-grow: 1;
-  flex-basis: 308px;
+  flex-basis: 250px; /* 308 */
   min-width: 0;
 }
 
@@ -1580,6 +1582,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   text-align: center;
 }
 
+.mob-shedule {
+  display: block;
+}
+
+.desk-shedule {
+  display: none;
+}
+
 .week-day {
   display: flex;
   justify-content: center;
@@ -1801,6 +1811,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .header-logo img {
     display: inline-block;
   }
+
+  .row-item {
+    flex-grow: 1;
+  }
+
+  .block-parameters .diff-select {
+    max-width: none;
+  }
+
+  .block-parameters .btn-add-day {
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -1865,5 +1887,60 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     border-radius: 50%;
     background: #443296;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .main-content {
+    grid-template-columns: 264px 1fr 340px;
+    grid-template-rows: 1fr;
+  }
+
+  .mob-shedule {
+    display: none;
+  }
+
+  .desk-shedule {
+    display: block;
+  }
+
+  .shedule-row > *{
+    height: 38px;
+  }
+
+  .desk-shedule input[type="text"],
+  .desk-shedule .diff-select,
+  .desk-shedule .btn-add-day {
+    margin-top: 0;
+  }
+
+  .desk-shedule .shedule-row {
+    display: flex;
+    /* align-items: center;
+    height: 38px; */
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .week-day {
+    width: 38px;
+  }
+
+  .pic-input-clock,
+  .desk-shedule .diff-price {
+    width: 18.5%;
+  }
+
+  .diff-select {
+    width: 12%;
+  }
+
+  .desk-shedule .btn-add-day {
+    width: 19.5%;
+    width: 133px;
+    padding: 9px;
+    padding-right: 0;
+    white-space: nowrap;
+    align-self: flex-start;
   }
 }

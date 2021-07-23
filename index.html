@@ -670,7 +670,6 @@
             </div>
             <a href="#" class="show-map">Показать на карте</a>
       
-            <button class="btn btn-add-day btn-invert" type="button">Добавить день <img src="./img/add-pick-blue.svg" alt="Добавить день"></button>
             
             <h3 class="sub-head">Фотографии места</h3>
             <div class="horisont-scroll">
@@ -720,6 +719,7 @@
               <input type="file" name="photos-exc" id="photos-exc" accept=".png,.jpg,.jpeg">
               <label class="btn load-photos" for="photos-exc">Загрузить фотографии</label>
             </div>
+            <button class="btn btn-add-day btn-invert" type="button">Добавить день <img src="./img/add-pick-blue.svg" alt="Добавить день"></button>
           </div>
         </div>
   
@@ -746,59 +746,96 @@
           <label class="tab" for="multi-day">Многодневная</label>
           <span class="glider"></span>
         </div>
-        
-        <div class="members-count">
-          <button class="btn week-day" type="button">ПН</button>
-          <button class="btn btn-default week-day" type="button">ВТ</button>
-          <button class="btn btn-default week-day" type="button">СР</button>
-          <button class="btn btn-default week-day" type="button">ЧТ</button>
-          <button class="btn btn-default week-day" type="button">ПТ</button>
-          <button class="btn btn-default week-day" type="button">СБ</button>
-          <button class="btn btn-default week-day" type="button">ВС</button>
+        <div class="mob-shedule">
+          <div class="members-count">
+            <button class="btn week-day" type="button">ПН</button>
+            <button class="btn btn-default week-day" type="button">ВТ</button>
+            <button class="btn btn-default week-day" type="button">СР</button>
+            <button class="btn btn-default week-day" type="button">ЧТ</button>
+            <button class="btn btn-default week-day" type="button">ПТ</button>
+            <button class="btn btn-default week-day" type="button">СБ</button>
+            <button class="btn btn-default week-day" type="button">ВС</button>
+          </div>
+    
+          <div class="row">
+            <div class="row-item">
+              <h3 class="sub-head sub-head-nomrg">Начало</h3>
+              <div class="pic-input pic-input-clock">
+                <input type="text" name="start-time" id="start-time" placeholder="ЧЧ:ММ">
+              </div>
+            </div>
+            <div class="row-item">
+              <h3 class="sub-head sub-head-nomrg">Окончание</h3>
+              <div class="pic-input pic-input-clock">
+                <input type="text" name="end-time" id="end-time" placeholder="ЧЧ:ММ">
+              </div>
+            </div>
+          </div>
+    
+          <h3 class="sub-head">Повторять</h3>
+          <div class="select diff-select">
+            <input type="radio" name="repeat">
+            <i class="toggle icon icon-arrow-down"></i>
+            <i class="toggle icon icon-arrow-up"></i>
+            <span class="placeholder">Срок</span>
+            <label class="option">
+              <input type="radio" name="repeat">
+              <span class="title">3 месяца</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="repeat">
+              <span class="title">6 месяцев</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="repeat">
+              <span class="title">9 месяцев</span>
+            </label>
+          </div>
+    
+          <div class="row currency-cont">
+            <div class="row-item row-item-grow">
+              <h3 class="sub-head">Стоимость</h3>
+              <input type="text" name="price" id="price" placeholder="Введите стоимость">
+            </div>
+            <div class="row-item row-item-shrink">
+              <h3 class="sub-head">Валюта</h3>
+              <div class="select diff-select">
+                <input type="radio" name="currency">
+                <i class="toggle icon icon-arrow-down"></i>
+                <i class="toggle icon icon-arrow-up"></i>
+                <span class="placeholder">₽</span>
+                <label class="option">
+                  <input type="radio" name="currency" value="₽">
+                  <span class="title">₽</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="currency" value="€">
+                  <span class="title">€</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="currency" value="$">
+                  <span class="title">$</span>
+                </label>
+              </div>
+            </div>
+          </div>
+    
+          <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
         </div>
-  
-        <div class="row">
-          <div class="row-item">
-            <h3 class="sub-head sub-head-nomrg">Начало</h3>
+
+        <div class="desk-shedule">
+          <div class="shedule-row shedule-title-row">
+
+          </div>
+          <div class="shedule-row">
+            <button class="btn week-day" type="button">ПН</button>
             <div class="pic-input pic-input-clock">
               <input type="text" name="start-time" id="start-time" placeholder="ЧЧ:ММ">
             </div>
-          </div>
-          <div class="row-item">
-            <h3 class="sub-head sub-head-nomrg">Окончание</h3>
             <div class="pic-input pic-input-clock">
               <input type="text" name="end-time" id="end-time" placeholder="ЧЧ:ММ">
             </div>
-          </div>
-        </div>
-  
-        <h3 class="sub-head">Повторять</h3>
-        <div class="select diff-select">
-          <input type="radio" name="repeat">
-          <i class="toggle icon icon-arrow-down"></i>
-          <i class="toggle icon icon-arrow-up"></i>
-          <span class="placeholder">Срок</span>
-          <label class="option">
-            <input type="radio" name="repeat">
-            <span class="title">3 месяца</span>
-          </label>
-          <label class="option">
-            <input type="radio" name="repeat">
-            <span class="title">6 месяцев</span>
-          </label>
-          <label class="option">
-            <input type="radio" name="repeat">
-            <span class="title">9 месяцев</span>
-          </label>
-        </div>
-  
-        <div class="row currency-cont">
-          <div class="row-item row-item-grow">
-            <h3 class="sub-head">Стоимость</h3>
-            <input type="text" name="price" id="price" placeholder="Введите стоимость">
-          </div>
-          <div class="row-item row-item-shrink">
-            <h3 class="sub-head">Валюта</h3>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
             <div class="select diff-select">
               <input type="radio" name="currency">
               <i class="toggle icon icon-arrow-down"></i>
@@ -817,12 +854,10 @@
                 <span class="title">$</span>
               </label>
             </div>
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
           </div>
         </div>
-  
-  
-        <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
-        
+
         <div class="choosen-date">
           <h3 class="sub-head key-block-hide">
             <button class="hide-block"></button>
