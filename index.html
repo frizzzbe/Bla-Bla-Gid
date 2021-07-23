@@ -825,17 +825,115 @@
 
         <div class="desk-shedule">
           <div class="shedule-row shedule-title-row">
-
+            <ul class="shedule-list">
+              <li class="shedule-title">Начало</li>
+              <li class="shedule-title">Окончание</li>
+              <li class="shedule-title">Стоимость</li>
+            </ul>
           </div>
           <div class="shedule-row">
             <button class="btn week-day" type="button">ПН</button>
             <div class="pic-input pic-input-clock">
-              <input type="text" name="start-time" id="start-time" placeholder="ЧЧ:ММ">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
             </div>
             <div class="pic-input pic-input-clock">
-              <input type="text" name="end-time" id="end-time" placeholder="ЧЧ:ММ">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
             </div>
             <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+          <div class="shedule-row">
+            <button class="btn btn-default week-day" type="button">ВТ</button>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
+            </div>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
+            </div>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+          <div class="shedule-row">
+            <button class="btn btn-default week-day" type="button">СР</button>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
+            </div>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
+            </div>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+          <div class="shedule-row">
+            <button class="btn btn-default week-day" type="button">ЧТ</button>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
+            </div>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
+            </div>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+          <div class="shedule-row">
+            <button class="btn btn-default week-day" type="button">ПТ</button>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
+            </div>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
+            </div>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+          <div class="shedule-row">
+            <button class="btn btn-default week-day" type="button">СБ</button>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
+            </div>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
+            </div>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+          <div class="shedule-row">
+            <button class="btn btn-default week-day" type="button">ВС</button>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="start-time" placeholder="ЧЧ:ММ">
+            </div>
+            <div class="pic-input pic-input-clock">
+              <input type="text" name="end-time" placeholder="ЧЧ:ММ">
+            </div>
+            <input class="diff-price" type="text" name="price" placeholder="Стоимость">
+            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
+          </div>
+        </div>
+
+        <div class="row currency-cont">
+          <div class="row-item row-item-grow">
+            <h3 class="sub-head">Повторять</h3>
+            <div class="select diff-select">
+              <input type="radio" name="repeat">
+              <i class="toggle icon icon-arrow-down"></i>
+              <i class="toggle icon icon-arrow-up"></i>
+              <span class="placeholder">Срок</span>
+              <label class="option">
+                <input type="radio" name="repeat">
+                <span class="title">3 месяца</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="repeat">
+                <span class="title">6 месяцев</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="repeat">
+                <span class="title">9 месяцев</span>
+              </label>
+            </div>
+          </div>
+          <div class="row-item row-item-shrink">
+            <h3 class="sub-head">Валюта</h3>
             <div class="select diff-select">
               <input type="radio" name="currency">
               <i class="toggle icon icon-arrow-down"></i>
@@ -854,7 +952,6 @@
                 <span class="title">$</span>
               </label>
             </div>
-            <button class="btn btn-add-day" type="button">Добавить время <img src="./img/add-pick.svg" alt="Добавить время"></button>
           </div>
         </div>
 

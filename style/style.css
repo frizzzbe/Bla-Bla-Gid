@@ -1918,22 +1918,58 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: flex;
     /* align-items: center;
     height: 38px; */
+    margin: 16px auto;
     gap: 8px;
     justify-content: space-between;
+  }
+
+  .desk-shedule .shedule-row:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .desk-shedule .shedule-title-row {
+    margin: 0;
+  }
+
+  .shedule-list {
+    width: calc(100% - 143px);
+    list-style: none;
+    padding: 0;
+    padding-left: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .shedule-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #171932;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .shedule-title:last-child {
+    flex-grow: 2;
   }
 
   .week-day {
     width: 38px;
   }
 
-  .pic-input-clock,
-  .desk-shedule .diff-price {
+  .shedule-row .pic-input-clock,
+  .shedule-row .diff-price {
     width: 18.5%;
   }
 
-  .diff-select {
-    width: 12%;
+  .shedule-row .diff-price {
+    flex-grow: 1;
   }
+
+  /* .diff-select {
+    width: 12%;
+  } */
 
   .desk-shedule .btn-add-day {
     width: 19.5%;
