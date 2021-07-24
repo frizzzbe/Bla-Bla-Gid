@@ -1873,8 +1873,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .pic-input.pic-input-address,
 .capital-search .btn-send {
-  margin-top: 16px;
+  margin-top: 8px;
   width: 100%;
+}
+
+.capital-search .btn-send {
+  gap: 8px;
 }
 
 .search-info {
@@ -1889,6 +1893,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   justify-content: space-between;
   align-items: center;
   /* width: 133px; */
+}
+
+.search-info .search-item:nth-child(n+3) {
+  display: none;
 }
 
 .search-text > * {
@@ -2128,5 +2136,38 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .block-parameters .tabs {
     margin-left: 0;
+  }
+
+  .capital-block {
+    padding-bottom: 15px;
+    border-radius: 0px 0px 32px 32px;
+  }
+
+  .capital-block .search-row {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .search-info {
+    margin-top: 16px;
+  }
+
+  .capital-search {
+    position: relative;
+    margin-top: 72px;
+  }
+
+  .capital-search .pic-input.pic-input-address {
+    flex-grow: 3;
+    width: auto;
+  }
+  
+  .capital-search .btn-send {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .capital-search .search-info .search-item {
+    display: flex;
   }
 }
