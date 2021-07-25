@@ -1736,10 +1736,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   line-height: 22px;
   color: #171932;
 
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
+  /* -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical; */
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.side-paragraph--open {
+  max-height: none;
 }
 
 .side-read-more {
@@ -1838,7 +1842,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   color: #2D3161;
 }
 
-.btn-invert {
+.capital-block .btn-invert {
   margin-top: 20px;
   margin-left: 0;
   font-weight: bold;
