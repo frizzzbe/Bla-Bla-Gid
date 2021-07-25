@@ -28,6 +28,10 @@ b {
   font-weight: 600;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-weight: bold;
   font-size: 24px;
@@ -159,6 +163,37 @@ input[type="checkbox"]:checked + label::before {
 input[type="checkbox"]:disabled + label::before {
   background-color: #E0E0E0;
   border: 1px solid #E0E0E0;
+}
+
+.scroll-right {
+  /* fire-fox */
+  scrollbar-color: #443296 #DBDFFA;
+  scrollbar-width: 12px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.scroll-right::-webkit-scrollbar {
+  width: 12px;
+	height: 12px;
+} 
+
+.scroll-right::-webkit-scrollbar-track {
+  background: #DBDFFA; 
+  border-radius: 4px;
+}
+
+.scroll-right::-webkit-scrollbar-thumb {
+  background: #443296; 
+  border-radius: 10px;
+}
+
+.scroll-right::-webkit-scrollbar-thumb:hover {
+  background: #2D3161; 
 }
 
 .multi-pick {
@@ -1365,7 +1400,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .transportation::-webkit-scrollbar-thumb:hover {
-  background: #443296; 
+  background: #2D3161; 
 }
 
 
@@ -1789,6 +1824,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   position: relative;
   padding-top: 32px;
   padding-bottom: 188px;
+  margin-bottom: 200px;
   background: url('../img/main-bg.svg') no-repeat center;
   background-position: bottom right;
   background-size: 100%;
@@ -1917,6 +1953,60 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-weight: 400;
 }
 
+.norm-block {
+  margin-top: 32px;
+}
+
+.norm-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3161;
+}
+
+.scroll-city {
+  margin: 24px auto;
+  justify-content: space-between;
+}
+
+.way-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 155px;
+  flex-shrink: 0;
+}
+
+.way-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.way-city {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3161;
+
+}
+
+.way-info {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2D3161;
+}
+
+.btn-city {
+  width: 100%;
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
 
 @media screen and (min-width: 768px){
   .main-content {
@@ -1980,6 +2070,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .block-parameters .btn-add-day {
     margin-left: 0;
+  }
+  .btn-city {
+    width: auto;
   }
 }
 
@@ -2145,6 +2238,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .capital-block {
     padding-bottom: 15px;
     border-radius: 0px 0px 32px 32px;
+    margin-bottom: 0;
   }
 
   .capital-block .search-row {
