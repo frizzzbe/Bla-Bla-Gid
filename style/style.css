@@ -2156,6 +2156,54 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   height: 16px;
 }
 
+.book {
+  padding: 24px;
+  margin-top: 32px;
+  background-color: #F2F2FF;
+}
+
+.book-title {
+  width: 60%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3161;
+}
+
+.book-title em {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #443296;
+}
+
+.book-list {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.book-item {
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D3161;
+  margin-top: 8px;
+  padding-left: 24px;
+}
+
+.book-item::before { 
+  position: absolute;
+  left: 0;
+  transform: translateY(25%);
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../img/success-blue.svg') no-repeat center;
+  background-size: cover;
+}
+
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
@@ -2295,7 +2343,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .categories-list {
     gap: 14px;
   }
-  
+
   .way-move--mob {
     display: none;
   }
