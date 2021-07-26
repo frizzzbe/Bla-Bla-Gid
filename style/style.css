@@ -2281,8 +2281,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .block-parameters .btn-add-day {
     margin-left: 0;
   }
+  
   .btn-city {
     width: auto;
+  }
+
+  .book-mob {
+    display: none;
   }
 }
 
