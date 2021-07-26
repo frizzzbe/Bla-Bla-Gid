@@ -577,12 +577,16 @@ input[type="radio"]:checked + label {
   transform: translateX(25%);
   /* position: sticky; */
   top: 58px;
-  height: 90vh;
+  height: 90%;
   /* display: none; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+}
+
+.desktop-nav-book {
+  height: calc(90% - 250px);
 }
 
 .mob-menu {
@@ -2162,12 +2166,22 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background-color: #F2F2FF;
 }
 
+.book-desk {
+  position: fixed;
+  bottom: 0;
+  width: 264px;
+}
+
 .book-title {
   width: 60%;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   color: #2D3161;
+}
+
+.book-desk .book-title {
+  width: 100%;
 }
 
 .book-title em {
