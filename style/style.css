@@ -910,6 +910,29 @@ input[type="radio"]:checked + label {
   background: url('../img/zip.svg');
 }
 
+.card-price {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 4px 28px 4px 8px;
+  background-color: #2D3161;
+  border-radius: 8px;
+}
+
+.card-price::after {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../img/zip.svg') no-repeat center;
+  background-size: contain;
+}
+
 .pic-input {
   position: relative;
 }
@@ -2217,6 +2240,73 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background: url('../img/success-blue.svg') no-repeat center;
   background-size: cover;
 }
+
+.scroll-best-offers {
+  margin-top: 24px;
+  margin-bottom: 42px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 18px;
+  gap: 24px;
+}
+
+.offer-item {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 266px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.offer-body {
+  padding: 16px;
+  padding-bottom: 44px;
+}
+
+.offer-item img {
+  width: 100%;
+  max-height: 266px;
+  object-fit: cover;
+}
+
+.offer-item .card-price { 
+  position: absolute;
+  right: 16px;
+  top: 226px;
+}
+
+.offer-tag {
+  position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #443296;
+  margin-right: 19px;
+
+}
+
+.offer-tag:not(:last-child)::after {
+  position: absolute;
+  right: -11px;
+  top: 44%;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #443296;
+  border-radius: 50%;
+}
+
+.offer-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #171932;
+  margin-top: 8px;
+}
+
 
 @media screen and (min-width: 768px){
   .main-content {
