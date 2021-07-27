@@ -1764,7 +1764,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   justify-content: start;
   align-items: center;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 26px;
 }
 
 .guide-info img {
@@ -1876,7 +1876,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .capital-title {
-  padding-top: 40px;
+  padding-top: 0;
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
@@ -2487,6 +2487,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .book-mob {
     display: none;
+  }
+
+  .capital-title {
+    padding-top: 40px;
   }
 
   .summer-item {
