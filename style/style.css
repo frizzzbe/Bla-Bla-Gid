@@ -2393,10 +2393,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 8px;
   line-height: 8px;
   color: #FFFFFF;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mob-profile .guide-info {
+  margin-top: 0;
+  padding-top: 16px;
+  border-top: 1px solid #E0E0E0;
 }
 
 
