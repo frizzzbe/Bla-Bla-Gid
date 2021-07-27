@@ -651,6 +651,7 @@ input[type="radio"]:checked + label {
 }
 
 .desk-nav .nav-link {
+  position: relative;
   padding: 2px;
   display: inline-flex;
   width: 174px;
@@ -661,6 +662,10 @@ input[type="radio"]:checked + label {
   font-size: 18px;
   line-height: 26px;
   color: #171932;
+}
+
+.nav-link-txt {
+  position: relative;
 }
 
 .desk-nav--active .nav-link {
@@ -742,12 +747,18 @@ input[type="radio"]:checked + label {
 }
 
 .main-header-logged .menu-item {
+  position: relative;
   width: 24px;
   height: 24px;
   margin: 0 8px;
   font-size: 0;
 }
 
+.main-header-logged .menu-number {
+  right: -7px;
+  top: -3px;
+  line-height: normal;
+}
 
 .header-logo img {
   display: block;
@@ -2148,7 +2159,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: block;
 }
 
-.way-move--desk {
+.side-block-hide {
   display: none;
 }
 
@@ -2560,7 +2571,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
   }
 
-  .way-move--desk {
+  .side-block-hide {
     display: block;
   }
 }
