@@ -58,6 +58,18 @@ textarea:focus {
   border: 1px solid #2D3161 !important;
 }
 
+input[type="time"] {
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 7px 20px;
+  padding-left: 43px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+}
+
 input[type="text"] {
   border: 1px solid #BDBDBD;
   box-sizing: border-box;
@@ -70,6 +82,7 @@ input[type="text"] {
   display: block;
 }
 
+input[type="time"]::placeholder,
 input[type="text"]::placeholder {
   color: #828282;
 }
@@ -949,8 +962,18 @@ input[type="radio"]:checked + label {
 }
 
 .pic-input input{
-  padding: 8px 44px;
+  padding: 7px 44px;
   padding-right: 0;
+}
+
+.row-input .pic-input-clock {
+  margin-top: 10px;
+}
+
+.pic-input .pic-input-clock {
+  padding: 7px 20px;
+  padding-left: 43px;
+  margin-top: 10px;
 }
 
 .pic-input::before {
