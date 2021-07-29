@@ -563,12 +563,12 @@ input[type="radio"]:checked + label {
 
 .nav-icon svg path {
   stroke: #443296;
-  stroke-width: 2px;
+  /* stroke-width: 2px; */
 }
 
 .mob-nav--active .nav-icon svg path{
   stroke: #fff;
-  stroke-width: 1px;
+  /* stroke-width: 1px; */
 }
 
 .mob-nav-create {
@@ -600,6 +600,12 @@ input[type="radio"]:checked + label {
 
 .desktop-nav-book {
   height: calc(90% - 250px);
+}
+
+.desktop-nav-scroll {
+  position: relative;
+  height: auto;
+  transform: none;
 }
 
 .mob-menu {
@@ -703,7 +709,7 @@ input[type="radio"]:checked + label {
 
 .desk-nav--active .nav-icon svg path{
   stroke: #fff;
-  stroke-width: 1px;
+  /* stroke-width: 1px; */
 }
 
 .desk-nav-create {
@@ -2402,6 +2408,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: flex;
   align-items: center;
   justify-content: start;
+  cursor: pointer;
 }
 
 .profile-item img {
