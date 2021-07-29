@@ -2034,6 +2034,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   color: #2D3161;
 }
 
+.head-info {
+  background-color: #FBFBFF;
+  border-radius: 0px 0px 32px 32px;
+}
+
 .scroll-city {
   margin: 24px auto;
   justify-content: space-between;
@@ -2446,6 +2451,60 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   border-top: 1px solid #E0E0E0;
 }
 
+/* page search */
+
+.head-info {
+  padding: 0;
+  padding-top: 16px;
+  margin-top: 0;
+}
+
+.head-location {
+  font-size: 24px;
+  line-height: 32px;
+
+  margin-top: 16px;
+  font-weight: bold;
+  color: #2D3161;
+}
+
+.head-description {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171932;
+}
+
+.head-summary {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.summary-item {
+  width: 100%;
+}
+
+.summary-name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2D3161;
+}
+
+.summary-value {
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2D3161;
+}
+
+
 
 @media screen and (min-width: 768px){
   .main-content {
@@ -2526,6 +2585,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .summer-item {
     width: 222px;
     height: 222px;
+  }
+
+  .head-location {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .head-info {
+    padding: 40px 32px;
+    padding-top: 48px;
   }
 }
 
@@ -2746,5 +2815,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .capital-search .search-info .search-item {
     display: flex;
+  }
+
+  .summary-item {
+    width: auto;
   }
 }
