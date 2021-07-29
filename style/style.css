@@ -2530,6 +2530,57 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   right: 12px;
 }
 
+.search-controls {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.control-select {
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+}
+
+.search-controls .select {
+  width: 200px;
+}
+
+.control-grid {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-grid .sub-head {
+  margin: 0;
+  margin-right: 24px;
+}
+
+.control-grid .btn-grid {
+  padding: 6px 8px;
+  border: 1px solid #E0E0E0;
+  color: #E0E0E0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.control-grid .btn-grid path{
+  stroke: #E0E0E0;
+}
+
+.control-grid .grid-active {
+  border: 1px solid #443296;
+  color: #443296;
+}
+
+.control-grid .grid-active path {
+  stroke: #443296;
+}
 
 @media screen and (min-width: 768px){
   .main-content {
