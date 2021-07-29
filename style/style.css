@@ -239,7 +239,8 @@ input[type="checkbox"]:disabled + label::before {
   position: absolute;
   margin-left: 2px;
   display: block;
-  background: url('../img/close-pick.svg');
+  background: url('../img/close-pick.svg') no-repeat center;
+  background-size: cover;
   width: 10px;
   height: 10px;
   top: 4px;
@@ -2504,6 +2505,30 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   color: #2D3161;
 }
 
+.choosen-filters {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.choosen-filters .multi-pick-item {
+  padding: 9px 32px 9px 12px;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 10px;
+  color: #2D3161;
+}
+
+.choosen-filters .multi-pick-item::after {
+  width: 16px;
+  height: 16px;
+  top: 6px;
+  right: 12px;
+}
 
 
 @media screen and (min-width: 768px){
