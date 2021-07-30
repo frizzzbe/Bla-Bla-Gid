@@ -2536,6 +2536,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -2580,6 +2581,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .control-grid .grid-active path {
   stroke: #443296;
+}
+
+.control-grid {
+  display: none;
 }
 
 @media screen and (min-width: 768px){
@@ -2895,5 +2900,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .summary-item {
     width: auto;
+  }
+
+  .control-grid {
+    display: flex;
   }
 }
