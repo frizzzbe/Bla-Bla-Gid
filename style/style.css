@@ -973,7 +973,7 @@ input[type="radio"]:checked + label {
   padding-right: 0;
 }
 
-.row-input .pic-input-clock {
+.pic-input-clock {
   margin-top: 10px;
 }
 
@@ -1238,7 +1238,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin: auto;
   margin-left: 0;
   width: 100%;
-  max-width: 310px;
+  max-width: 328px;
   /* height: 100%; */
   font-weight: normal;
   font-size: 14px;
@@ -2585,6 +2585,39 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .control-grid {
   display: none;
+}
+
+.mobile-filter {
+  margin-top: 60px;
+}
+
+.filter-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-btn span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.filter-btn img {
+  margin-right: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.filter-close-icon {
+  margin-left: auto;
+  display: none;
+}
+
+.filter-btn--open .filter-close-icon {
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px){

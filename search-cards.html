@@ -202,6 +202,82 @@
         </div>
       </section>
 
+      <section class="mobile-filter">
+        <!-- filter-btn--open в раскрытом состоянии добавляет крестик -->
+        <button class="btn filter-btn filter-btn--open" type="button">
+          <img src="./img/Filter.svg" alt="Фильтр">
+          <span>Фильтр</span>
+          <img src="./img/filter-close.svg" alt="Закрыть фильтр" class="filter-close-icon">
+        </button>
+
+        <div class="mob-filter-content">
+          <h3 class="sub-head">Название экскурсии</h3>
+          <input type="text" name="title" id="title" placeholder="Например, Царское Село">
+          
+          <h3 class="sub-head">Бронировние</h3>
+          <input type="checkbox" name="momental" id="momental" checked>
+          <label class="momental-label" for="momental">Моментальное бронирование</label>
+          <input type="checkbox" name="request" id="request">
+          <label for="request">Запрос экскурсии</label>
+
+          <h3 class="sub-head">Страна</h3>
+          <div class="select diff-select">
+            <input type="radio" name="Country">
+            <i class="toggle icon icon-arrow-down"></i>
+            <i class="toggle icon icon-arrow-up"></i>
+            <span class="placeholder">Россия</span>
+            <label class="option">
+              <input type="radio" name="Country">
+              <span class="title">Россия</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="Country">
+              <span class="title">Украина</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="Country">
+              <span class="title">Беларусь</span>
+            </label>
+          </div>
+          
+          <h3 class="sub-head">Город</h3>
+          <div class="select diff-select">
+            <input type="radio" name="City">
+            <i class="toggle icon icon-arrow-down"></i>
+            <i class="toggle icon icon-arrow-up"></i>
+            <span class="placeholder">Санкт-Петербург</span>
+            <label class="option">
+              <input type="radio" name="City">
+              <span class="title">Санкт-Петербург</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="City">
+              <span class="title">Москва</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="City">
+              <span class="title">Сочи</span>
+            </label>
+          </div>
+
+          <h3 class="sub-head">Дата экскурсии</h3>
+          <div class="pic-input pic-input-calendar">
+            <input type="text" name="date-excurse" id="date-excurse" placeholder="ДД/ММ/ГГГГ">
+          </div>
+
+          <h3 class="sub-head">Начало экскурсии</h3>
+          <div class="pic-input pic-input-clock">
+            <input type="time" name="time-excurse" id="time-excurse" placeholder="ЧЧ:ММ">
+          </div>
+          
+          <h3 class="sub-head">Длительность</h3>
+          <input type="checkbox" name="multi-day" id="day">
+          <label for="day">Дневная</label>
+          <input type="checkbox" name="multi-day" id="multi-day">
+          <label for="multi-day">Многодневная</label>
+        </div>
+      </section>
+
       <section class="norm-block">
         <p class="filters-paragraph">Выбранные фильтры:</p>
         <div class="choosen-filters">
