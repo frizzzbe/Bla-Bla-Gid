@@ -2782,6 +2782,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-right: 16px;
 }
 
+.desk-filter-content .way-move {
+  padding: 0;
+}
+
+.desk-filter-content .img-item,
+.mob-filter-content .img-item {
+  width: 62px;
+}
+
+.desk-filter-content .image-object,
+.mob-filter-content .image-object {
+  height: 62px;
+}
+
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
@@ -2871,6 +2885,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .head-info {
     padding: 40px 32px;
     padding-top: 48px;
+  }
+
+  .mobile-filter {
+    display: none;
   }
 }
 
