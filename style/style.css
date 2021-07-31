@@ -597,6 +597,11 @@ input[type="radio"]:checked + label {
   margin: 0 auto;
 }
 
+.desk-filter-content.wrapper {
+  margin-top: 16px;
+  width: 80%;
+}
+
 .main-content {
   position: relative;
   /* display: flex; */
@@ -734,12 +739,16 @@ input[type="radio"]:checked + label {
 
 .desktop-nav-book {
   height: calc(90% - 250px);
+  top: 0;
+  margin-top: 34px;
 }
 
 .desktop-nav-scroll {
   position: relative;
   height: auto;
   transform: none;
+  top: 0;
+  margin-top: 34px;
 }
 
 .mob-menu {
@@ -2756,6 +2765,21 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .filter-apply {
   width: 100%;
   margin-top: 30px;
+}
+
+.filter-caption {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2D3161;
+  border-top: 1px solid #E0E0E0;
+}
+
+.filter-caption img {
+  margin-right: 16px;
 }
 
 @media screen and (min-width: 768px){
