@@ -204,6 +204,7 @@ input[type="checkbox"] + .check-round::before {
   height: 28px;
   background: #DBDFFA;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .check-round .round {
@@ -220,6 +221,94 @@ input[type="checkbox"]:checked + .check-round .round {
   transform: translateX(20px);
 }
 
+.double-range {
+  margin-top: 18px;
+}
+
+.range-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171932;
+}
+
+.range-slider {
+  margin-top: 16px;
+  position: relative;
+  width: 100%;
+  height: 14px;
+  background: #DBDFFA;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.range-select {
+  width: auto;
+  position: absolute;
+  left: 25%;
+  right: 15%;
+  height: 14px;
+  background: #443296;
+  border-radius: 40px;
+}
+
+.range-thumb {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  left: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: #443296;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.range-slider:hover .range-select,
+.range-slider:hover .range-thumb {
+  background-color: #2D3161;
+}
+
+.range-min {
+  left: 25%;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.range-max {
+  left: auto;
+  right: 15%;
+  transform: translate(50%, -50%);
+}
+
+
+.row.range-values {
+  margin-top: 17px;
+  gap: 22px;
+}
+
+.range-value {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #171932;
+}
+
+.range-input {
+  margin-top: 4px;
+}
+
+.range-values .row-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.range-values .row-item:last-child .range-value {
+  align-self: flex-end;
+}
 
 
 .scroll-right {

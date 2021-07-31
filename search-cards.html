@@ -285,6 +285,36 @@
             </div>
           </label>
           
+          <!-- Необходимо для range-min и для range-select изменять значение left (одинаково и там и там) -->
+          <!-- Необходимо для range-max и для range-select изменять значение right (одинаково и там и там) -->
+          <div class="double-range">
+            <p class="range-title">Стоимость</p>
+            <div class="range-slider">
+              <div class="range-thumb range-min"></div>
+              <div class="range-select"></div>
+              <div class="range-thumb range-max"></div>
+            </div>
+
+            <div class="row range-values">
+              <div class="row-item">
+                <span class="range-value">250₽</span>
+                <input class="range-input" type="text" name="range-from" placeholder="От">
+              </div>
+              <div class="row-item">
+                <span class="range-value">10 550₽</span>
+                <input class="range-input" type="text" name="range-to" placeholder="До">
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sub-head key-block-hide">
+            <button class="hide-block"></button>
+            Участники
+          </h3>
+          <input type="checkbox" name="members" id="individual">
+          <label for="individual">Индивидуальная</label>
+          <input type="checkbox" name="members" id="group">
+          <label for="group">Групповая</label>
         </div>
       </section>
 
