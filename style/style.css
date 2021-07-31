@@ -60,6 +60,7 @@ textarea:focus {
 
 input[type="time"] {
   border: 1px solid #BDBDBD;
+  background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 7px 20px;
@@ -308,6 +309,10 @@ input[type="checkbox"]:checked + .check-round .round {
 
 .range-values .row-item:last-child .range-value {
   align-self: flex-end;
+}
+
+.block-parameters .row-item {
+  width: 50%;
 }
 
 
@@ -1705,6 +1710,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   top: 2px;
 }
 
+.excurs-name {
+  padding-right: 40px;
+}
+
 .excurs-name b {
   font-weight: 700;
 }
@@ -2765,6 +2774,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .filter-apply {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 74px;
 }
 
 .filter-caption {
@@ -3044,6 +3054,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .shedule-row .pic-input-clock,
   .shedule-row .diff-price {
     width: 18.5%;
+  }
+
+  .shedule-row .pic-input-clock {
+    margin-top: 0;
   }
 
   .shedule-row .diff-price {
