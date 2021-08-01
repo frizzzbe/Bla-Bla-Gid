@@ -1094,12 +1094,16 @@ input[type="radio"]:checked + label {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-  padding: 4px 28px 4px 8px;
+  padding: 4px 8px;
   background-color: #2D3161;
   border-radius: 8px;
 }
 
-.card-price::after {
+.card-price--momental {
+  padding: 4px 28px 4px 8px;
+}
+
+.card-price--momental::after {
   position: absolute;
   top: 7px;
   right: 6px;
@@ -2474,6 +2478,26 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   top: 226px;
 }
 
+.offer-tags {
+  display: flex;
+  overflow-x: auto;
+}
+
+.offer-tags::-webkit-scrollbar {
+  width: 4px;
+	height: 4px;
+} 
+
+.offer-tags::-webkit-scrollbar-track {
+  background: #DBDFFA; 
+  border-radius: 2px;
+}
+
+.offer-tags::-webkit-scrollbar-thumb {
+  background: #443296; 
+  border-radius: 2px;
+}
+
 .offer-tag {
   position: relative;
   font-weight: normal;
@@ -2804,6 +2828,90 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .desk-filter-content .image-object,
 .mob-filter-content .image-object {
   height: 62px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 24px;
+}
+
+.cards-grid--small {}
+
+.cards-grid--large {}
+
+.search-card {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-header {
+  position: relative;
+  width: 100%;
+  
+}
+
+.card-slider {
+  height: 302px;
+}
+
+.card-slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-pagination {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.slider-pagination .slider-point {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(242, 242, 242, 0.5);
+  border-radius: 50%;
+}
+
+.slider-pagination .slider-point--active {
+  background-color: #F2F2F2;
+}
+
+.like {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.like--checked svg {
+  fill: #EF5DA8;
+}
+
+.like--checked path {
+  stroke: #EF5DA8;
+}
+
+.card-header .card-price {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.card-body .card-price {
+  display: none;
+}
+
+.card-body {
+  padding: 16px;
+  padding-bottom: 24px;
 }
 
 @media screen and (min-width: 768px){
