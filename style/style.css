@@ -2914,6 +2914,52 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   padding-bottom: 24px;
 }
 
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-caption {
+  flex-grow: 1;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.card-stats {
+  margin-top: 8px;
+  display: flex;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #171932;
+
+}
+
+.card-id {
+  margin-top: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.card-stars,
+.card-reviews {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  gap: 4px;
+}
+
+.card-stars {
+  margin-left: 0;
+}
+
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
