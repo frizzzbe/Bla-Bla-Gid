@@ -1693,7 +1693,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   content: "";
   display: block; 
   width: 24px;
-  height: 100% - 19px;
+  height: calc(100% - 19px);
   bottom: 0;
   background-color: #fff;
 }
@@ -1952,11 +1952,37 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-top: 26px;
 }
 
-.guide-info img {
+.guide-info > img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
+
+.guide-group {
+  display: flex;
+  margin-right: -26px;
+}
+
+.guide-group img {
+  width: 34px;
+  height: 34px;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.guide-group img:nth-child(2) {
+  transform: translateX(-40%);
+}
+
+.guide-group img:nth-child(3) {
+  transform: translateX(-80%);
+}
+
+.guide-group img:nth-child(n+4) {
+  display: none;
+}
+
+
 
 .guid-data {
   font-size: 12px;
@@ -2878,6 +2904,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   height: 8px;
   background-color: rgba(242, 242, 242, 0.5);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider-pagination .slider-point--active {
@@ -2954,11 +2981,136 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   align-items: center;
   margin-left: 45px;
   gap: 4px;
+  cursor: pointer;
 }
 
 .card-stars {
   margin-left: 0;
 }
+
+.card-route {
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid #F2F2F2;
+}
+
+.route-caption {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171932;
+}
+
+.route-list {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.route-list::before {
+  content: "";
+  position: absolute;
+  left: 4.8px;
+  top: 10px;
+  height: calc(100% - 19px);
+  width: 1px;
+  background-color: #443296;
+  display: block;
+}
+
+.route-point {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 8px;
+}
+
+.route-point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  border: 2px solid #443296;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+
+  background-color: #fff;
+}
+
+.route-point:last-child:before {
+  background-color: #443296;
+}
+
+.route-point:last-child:after {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  content: "";
+  display: block; 
+  width: 12px;
+  height: calc(100% - 17px);
+  bottom: 0;
+  background-color: #fff;
+}
+
+.route-name {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;
+}
+
+.on-way {
+  margin-top: 4px;
+  gap: 4px;
+  align-items: baseline;
+}
+
+.hitch,
+.hitch-city {
+  flex-shrink: 0;
+}
+
+.hitch {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;  
+}
+
+.hitch-city {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;
+}
+
+.card-data {
+  margin-top: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-time,
+.card-people {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-guide {
+  margin-top: 8px;
+}
+
 
 @media screen and (min-width: 768px){
   .main-content {
