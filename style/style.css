@@ -2867,11 +2867,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   min-width: 0;
 }
 
-.cards-grid--small .search-card {
-  max-width: 430px;
-  margin: 0 auto;
-}
-
 .search-card {
   background-color: #FFFFFF;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
@@ -2880,6 +2875,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  max-width: 430px;
+  margin: 0 auto;
 } 
 
 .card-header {
@@ -2948,7 +2945,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .card-body {
   position: relative;
   padding: 16px;
-  padding-top: 54px;
   padding-bottom: 24px;
   flex-grow: 1;
 }
@@ -3121,43 +3117,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .card-guide {
   margin-top: 8px;
-}
-
-/* cards-grid--small cards-grid--large */
-.cards-grid--large .search-card {
-  grid-column: 1 / 3;
-  width: 100%;
-  flex-direction: row;
-} 
-
-.cards-grid--large .card-header {
-  flex-shrink: 0;
-  width: 308px;
-}
-
-.cards-grid--large .card-slider {
-  height: 100%;
-}
-.cards-grid--large .offer-tags:first-child {
-  position: absolute;
-  top: 26px;
-  flex-grow: 0;
-  width: calc(85% - 100px);
-}
-
-.cards-grid--large .card-caption {
-  padding-right: 115px;
-}
-
-.cards-grid--large .card-header .card-price {
-  display: none;
-}
-
-.cards-grid--large .card-body .card-price {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: inline-block;
 }
 
 .desk-filter-content .key-block-hide .hide-block {
@@ -3494,6 +3453,56 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .cards-grid {
     grid-template-columns: 1fr 1fr;
   }
+  
+  /* cards-grid--large */
+  .cards-grid--large .search-card {
+    grid-column: 1 / 3;
+    width: 100%;
+    flex-direction: row;
+  } 
+
+  .cards-grid--large .card-header {
+    flex-shrink: 0;
+    width: 308px;
+  }
+
+  .cards-grid--large .card-body {
+    padding-top: 54px;
+  }
+
+  .cards-grid--large .card-slider {
+    height: 100%;
+  }
+  .cards-grid--large .offer-tags:first-child {
+    position: absolute;
+    top: 26px;
+    flex-grow: 0;
+    width: calc(85% - 100px);
+  }
+
+  .cards-grid--large .card-caption {
+    padding-right: 115px;
+  }
+
+  .cards-grid--large .card-header .card-price {
+    display: none;
+  }
+
+  .cards-grid--large .card-body .card-price {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: inline-block;
+  }
+  
+
+  .cards-grid--large .search-card {
+    max-width: 1000px;
+  }
+
+  .cards-grid--small .search-card {
+    max-width: 430px;
+  }
 }
 
 @media screen and (min-width: 1350px){
@@ -3509,7 +3518,5 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .cards-grid--large .search-card {
     grid-column: 1 / 4;
-    max-width: 1000px;
-    margin: 0 auto;
   }
 }
