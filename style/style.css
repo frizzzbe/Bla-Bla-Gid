@@ -2948,6 +2948,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .card-body {
   position: relative;
   padding: 16px;
+  padding-top: 54px;
   padding-bottom: 24px;
   flex-grow: 1;
 }
@@ -3137,10 +3138,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .cards-grid--large .card-slider {
   height: 100%;
 }
+.cards-grid--large .offer-tags:first-child {
+  position: absolute;
+  top: 26px;
+  flex-grow: 0;
+  width: calc(85% - 100px);
+}
 
-.cards-grid--large .card-caption,
-.cards-grid--large .offer-tags {
-  margin-right: 120px;
+.cards-grid--large .card-caption {
+  padding-right: 115px;
 }
 
 .cards-grid--large .card-header .card-price {
@@ -3490,8 +3496,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 
+@media screen and (min-width: 1350px){
+  .cards-grid--large .card-header {
+    width: 308px;
+  }
+}
+
 @media screen and (min-width: 1750px){
   .cards-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cards-grid--large .search-card {
+    grid-column: 1 / 4;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
