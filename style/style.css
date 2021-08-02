@@ -3138,6 +3138,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   height: 100%;
 }
 
+.cards-grid--large .card-caption,
+.cards-grid--large .offer-tags {
+  margin-right: 120px;
+}
+
 .cards-grid--large .card-header .card-price {
   display: none;
 }
