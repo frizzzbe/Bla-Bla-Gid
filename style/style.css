@@ -2335,6 +2335,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+.category-item:last-child {
+  max-width: 280px;
+}
+
 .category-number {
   display: flex;
   align-items: center;
