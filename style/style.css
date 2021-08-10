@@ -3247,6 +3247,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
+.card-heading {
+  margin-top: 24px;
+}
+
 .card-paragraph {
   margin-top: 8px;
   font-weight: normal;
