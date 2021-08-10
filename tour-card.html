@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bla Bla Gid</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header class="main-header main-header-logged wrapper">
+    <button class="header-burger"></button>
+    <a href="#" class="header-logo">
+      <img src="./img/logo.png" alt="Логотип компании">
+    </a>
+    <div class="menu-item">
+      <img src="./img/menu-user.svg" alt="Пользователь">
+    </div>
+    <div class="menu-item">
+      <img src="./img/menu-favorite.svg" alt="Избранное">
+      <span class="menu-number">99</span>
+    </div>
+    <div class="menu-item">
+      <img src="./img/menu-cart.svg" alt="Корзина">
+      <span class="menu-number">2</span>
+    </div>
+  </header>
+  <!-- добавить mob-menu--active для показа меню -->
+  <div class="mob-menu">
+    <button class="mob-nav-close" type="button"><img src="./img/nav-close.svg" alt="Закрыть меню" width="40px" height="40px">Закрыть</button>
+    <nav class="mob-nav">
+      <ul>
+        <li class="desk-nav-item desk-nav--active">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 19L5 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </div>
+            Назад</a>
+        </li>
+        <li class="desk-nav-item">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="nav-link-txt">Избранное
+              <span class="menu-number">99</span>
+            </span>
+          </a>
+        </li>
+        <li class="desk-nav-item">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M9 22.5C9.55228 22.5 10 22.0523 10 21.5C10 20.9477 9.55228 20.5 9 20.5C8.44772 20.5 8 20.9477 8 21.5C8 22.0523 8.44772 22.5 9 22.5Z" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 22.5C20.5523 22.5 21 22.0523 21 21.5C21 20.9477 20.5523 20.5 20 20.5C19.4477 20.5 19 20.9477 19 21.5C19 22.0523 19.4477 22.5 20 22.5Z" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1.5H5L7.68 14.89C7.77144 15.3504 8.02191 15.764 8.38755 16.0583C8.75318 16.3526 9.2107 16.509 9.68 16.5H19.4C19.8693 16.509 20.3268 16.3526 20.6925 16.0583C21.0581 15.764 21.3086 15.3504 21.4 14.89L23 6.5H6" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="nav-link-txt">Корзина
+              <span class="menu-number">2</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- добавить mob-menu--active для показа меню -->
+  <div class="mob-menu mob-profile">
+    <button class="mob-nav-close" type="button"><img src="./img/nav-close.svg" alt="Закрыть меню" width="40px" height="40px">Закрыть</button>
+    <div class="guide-info">
+      <img src="./img/guid.png" alt="Гид">
+      <div class="guid-data">
+        <p class="guid-name">Константинов Константин</p>
+        <p class="guid-status">12 экскурсий</p>
+      </div>
+    </div>
+    <ul class="profile-menu">
+      <li class="profile-item">
+        <img src="./img/profile-Ticket.svg" alt="Бронирования">
+        <p class="profile-text">Бронирования
+          <span class="menu-number">1</span>
+        </p>
+      </li>
+      <li class="profile-item">
+        <img src="./img/profile-msg.svg" alt="Сообщения">
+        <p class="profile-text">Сообщения
+          <span class="menu-number">3</span>
+        </p>
+      </li>
+      <li class="profile-item">
+        <img src="./img/profile-Star.svg" alt="Отзывы">
+        <p class="profile-text">Отзывы</p>
+      </li>
+      <li class="profile-item">
+        <img src="./img/profile-Setting.svg" alt="Настройки">
+        <p class="profile-text">Настройки</p>
+      </li>
+      <li class="profile-item">
+        <img src="./img/profile-ask.svg" alt="Помощь">
+        <p class="profile-text">Помощь</p>
+      </li>
+      <li class="profile-item">
+        <img src="./img/profile-Logout.svg" alt="Выход">
+        <p class="profile-text">Выход</p>
+      </li>
+    </ul>
+  </div>
+
+
+  <main class="main-content">
+    <div class="desktop-nav-cont">
+      <div class="desktop-nav desktop-nav-mini">
+        <a href="#" class="header-logo">
+          <img src="./img/logo.png" alt="Логотип компании">
+        </a>
+        <nav class="desk-nav desk-nav-top">
+          <ul>
+            <li class="desk-nav-item desk-nav--active">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 19L5 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </div>
+                Назад</a>
+            </li>
+            <li class="desk-nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="nav-link-txt">Избранное
+                  <span class="menu-number">99</span>
+                </span>
+              </a>
+            </li>
+            <li class="desk-nav-item">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M9 22.5C9.55228 22.5 10 22.0523 10 21.5C10 20.9477 9.55228 20.5 9 20.5C8.44772 20.5 8 20.9477 8 21.5C8 22.0523 8.44772 22.5 9 22.5Z" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 22.5C20.5523 22.5 21 22.0523 21 21.5C21 20.9477 20.5523 20.5 20 20.5C19.4477 20.5 19 20.9477 19 21.5C19 22.0523 19.4477 22.5 20 22.5Z" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1.5H5L7.68 14.89C7.77144 15.3504 8.02191 15.764 8.38755 16.0583C8.75318 16.3526 9.2107 16.509 9.68 16.5H19.4C19.8693 16.509 20.3268 16.3526 20.6925 16.0583C21.0581 15.764 21.3086 15.3504 21.4 14.89L23 6.5H6" stroke="#443296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="nav-link-txt">Корзина
+                  <span class="menu-number">2</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ############################################### -->
+    <div class="main-block">
+      <section class="norm-block wrapper">
+        <div class="slider-body">
+          <div class="slider-left"></div>
+          <img class="slider-main" src="./img/slider-4.jpg" alt="Фото тура">
+          <div class="slider-right"></div>
+        </div>
+        <div class="slides-cont">
+          <div class="slider-items offer-tags">
+            <img src="./img/slider-1.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-2.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-3.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-4.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-1.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-2.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-3.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-4.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-1.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-2.jpg" alt="Фото тура" class="slider-item">
+            <img src="./img/slider-3.jpg" alt="Фото тура" class="slider-item">
+          </div>
+          <span class="slider-shadow"></span>
+        </div>
+      </section>
+      
+      <section class="norm-block wrapper">
+        <h2 class="norm-heading">Категории</h2>
+        <div class="categories-list">
+          <div class="category-item">
+            <span class="category-number">11</span>
+            <h4 class="category-name">Авторские</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">42</span>
+            <h4 class="category-name">Автотуры</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">13</span>
+            <h4 class="category-name">Велотуры</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">29</span>
+            <h4 class="category-name">Водные туры</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">29</span>
+            <h4 class="category-name">Восхождения</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">9</span>
+            <h4 class="category-name">Мототуры</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">25</span>
+            <h4 class="category-name">Дайвинг </h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">2</span>
+            <h4 class="category-name">Джиптуры </h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">34</span>
+            <h4 class="category-name">Конные</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">5</span>
+            <h4 class="category-name">Гастрономические</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">27</span>
+            <h4 class="category-name">Морские </h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">159</span>
+            <h4 class="category-name">Семейные</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number">19</span>
+            <h4 class="category-name">Йога</h4>
+          </div>
+          <div class="category-item">
+            <span class="category-number category-add"><img src="./img/add-pick.svg" alt="Загрузить еще"></span>
+            <h4 class="category-name">Загрузить еще</h4>
+          </div>
+        </div>
+      </section>
+      
+      <section class="norm-block wrapper">
+        <h2 class="norm-heading">Лучшие предложения</h2>
+        <div class="scroll-right scroll-best-offers">
+          <div class="offer-item">
+            <img src="./img/offer-city-1.png" alt="Фото города">
+            <span class="card-price card-price--momental">2 000₽</span>
+            <div class="offer-body">
+              <div class="offer-tags">
+                <a href="#" class="offer-tag">Пешком</a>
+                <a href="#" class="offer-tag">Групповая</a>
+              </div>
+              <h4 class="offer-title">Дворцы и великолепный парк Петергофа</h4>
+            </div>
+          </div>
+          <div class="offer-item">
+            <img src="./img/offer-city-2.png" alt="Фото города">
+            <span class="card-price card-price--momental">10 000₽</span>
+            <div class="offer-body">
+              <div class="offer-tags">
+                <a href="#" class="offer-tag">Пешком</a>
+                <a href="#" class="offer-tag">Групповая</a>
+              </div>
+              <h4 class="offer-title">Центр Санкт-Петербурга за 3 дня</h4>
+            </div>
+          </div>
+          <div class="offer-item">
+            <img src="./img/offer-city-3.png" alt="Фото города">
+            <span class="card-price card-price--momental">7 600₽</span>
+            <div class="offer-body">
+              <div class="offer-tags">
+                <a href="#" class="offer-tag">Пешком</a>
+                <a href="#" class="offer-tag">Групповая</a>
+              </div>
+              <h4 class="offer-title">Ладожские шхеры и 7 водопадов Карелии за один день</h4>
+            </div>
+          </div>
+          <div class="offer-item">
+            <img src="./img/offer-city-4.png" alt="Фото города">
+            <span class="card-price card-price--momental">5 000₽</span>
+            <div class="offer-body">
+              <div class="offer-tags">
+                <a href="#" class="offer-tag">Пешком</a>
+                <a href="#" class="offer-tag">Групповая</a>
+              </div>
+              <h4 class="offer-title">Жёлтые сады в чистом городе</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="norm-block wrapper">
+        <h2 class="norm-heading norm-heading--sun"><img src="./img/sun.svg" alt="Лето">Лучшие предложения</h2>
+        <div class="summer-cont">
+          <a href="#" class="summer-item">
+            <img src="./img/offer-city-1.png" alt="Фото города">
+            <h4 class="summer-title">Прогуляться по Петергофу</h4>
+          </a>
+          <a href="#" class="summer-item">
+            <img src="./img/offer-city-2.png" alt="Фото города">
+            <h4 class="summer-title">Влюбиться в Казань</h4>
+          </a>
+          <a href="#" class="summer-item">
+            <img src="./img/offer-city-3.png" alt="Фото города">
+            <h4 class="summer-title">Отдохнуть в Сочи</h4>
+          </a>
+          <a href="#" class="summer-item">
+            <img src="./img/offer-city-4.png" alt="Фото города">
+            <h4 class="summer-title">Устроить фотосессию на поле с подсолнухами</h4>
+          </a>
+          <a href="#" class="summer-item">
+            <img src="./img/offer-city-5.png" alt="Фото города">
+            <h4 class="summer-title">Покататься на катере по озерам Карелии</h4>
+          </a>
+          <a href="#" class="summer-item">
+            <img src="./img/offer-city-6.png" alt="Фото города">
+            <h4 class="summer-title">Сходить в поход с друзьями</h4>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="side-block side-block-hide">
+      <section class="key-block wrapper">
+
+        <div class="guide-info">
+          <img src="./img/guid.png" alt="Гид">
+          <div class="guid-data">
+            <p class="guid-name">Константинов Константин</p>
+            <p class="guid-status">12 экскурсий</p>
+          </div>
+        </div>
+        <ul class="profile-menu">
+          <li class="profile-item">
+            <img src="./img/profile-Ticket.svg" alt="Бронирования">
+            <p class="profile-text">Бронирования
+              <span class="menu-number">1</span>
+            </p>
+          </li>
+          <li class="profile-item">
+            <img src="./img/profile-msg.svg" alt="Сообщения">
+            <p class="profile-text">Сообщения
+              <span class="menu-number">3</span>
+            </p>
+          </li>
+          <li class="profile-item">
+            <img src="./img/profile-Star.svg" alt="Отзывы">
+            <p class="profile-text">Отзывы</p>
+          </li>
+          <li class="profile-item">
+            <img src="./img/profile-Setting.svg" alt="Настройки">
+            <p class="profile-text">Настройки</p>
+          </li>
+          <li class="profile-item">
+            <img src="./img/profile-ask.svg" alt="Помощь">
+            <p class="profile-text">Помощь</p>
+          </li>
+          <li class="profile-item">
+            <img src="./img/profile-Logout.svg" alt="Выход">
+            <p class="profile-text">Выход</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </main>
+</body>
+</html>
