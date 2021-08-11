@@ -233,7 +233,7 @@
       <section class="norm-block wrapper">
         <div class="key-block-split">
           <div class="common-info key-split-item">
-            <h3>Общая информация</h3>
+            <h3 class="common-inf-title">Общая информация</h3>
             
             <table class="info-table">
               <tr>
@@ -250,7 +250,10 @@
               </tr>
               <tr>
                 <td>Дети</td>
-                <td>можно с детьми</td>
+                <td class="table-icon">
+                  <span>можно с детьми</span>
+                  <img src="./img/kids.svg" alt="Дети" width="12px" height="12px">
+                </td>
               </tr>
               <tr>
                 <td>Язык</td>
@@ -280,7 +283,67 @@
             <p class="excurs-location">ст. м. Невский проспект, Санкт-Петербург, Россия</p>
           </div>
           <div class="card-booking key-split-item">
-
+            <div class="book-on">
+              <h3 class="sub-head head-book">Количество участников</h3>
+              <div class="counter">
+                <button class="btn btn-gray counter-btn counter-btn--dist" type="button"></button>
+                <span class="counter-value">10</span>
+                <button class="btn counter-btn counter-btn--add" type="button"></button>
+              </div>
+              
+              <div class="row row-input">
+                <div class="row-item">
+                  <h3 class="sub-head sub-head-nomrg">Дата экскурсии</h3>
+                  <div class="pic-input pic-input-calendar">
+                    <input type="text" name="date-start" id="date-start" placeholder="Выберите дату">
+                  </div>
+                </div>
+                <div class="row-item">
+                  <h3 class="sub-head sub-head-nomrg">Время экскурсии</h3>
+                  <div class="pic-input pic-input-clock">
+                    <input type="text" name="time-start" id="time-start" placeholder="Выберите время">
+                  </div>
+                </div>
+              </div>
+            
+              <table class="book-table">
+                <tr>
+                  <td>Начало</td>
+                  <td>07:00, г Санкт-Петербург</td>
+                </tr>
+                <tr>
+                  <td>Окончание</td>
+                  <td>22:00, г Санкт-Петербург </td>
+                </tr>
+                <tr>
+                  <td>Длительность</td>
+                  <td>2 дня</td>
+                </tr>
+                <tr>
+                  <td>Передвижение</td>
+                  <td class="table-icon">
+                    <span>на автобусе</span>
+                    <img src="./img/bus.svg" alt="Транспорт" width="12px" height="12px">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Бронирование</td>
+                  <td class="table-icon">
+                    <span>моментальное</span>
+                    <img src="./img/zip.svg" alt="Моментальное" width="12px" height="12px">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Рейтинг</td>
+                  <td>
+                    <div class="card-stats">
+                      <div class="card-stars"><img src="./img/Star.svg" alt="Рейтинг" width="16px" height="16px">4.8</div>
+                      <div class="card-reviews"><img src="./img/nav-msg.svg" alt="Отзывы" width="16px" height="16px">15 отзывов</div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>

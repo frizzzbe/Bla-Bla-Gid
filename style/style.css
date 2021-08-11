@@ -3283,11 +3283,25 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   border-spacing: 0 8px;
 }
 
-.info-table td {
+table td.table-icon {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-table td,
+.info-table span {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
   color: #171932;
+  position: relative;
+  vertical-align: top;
+}
+
+.info-table span {
+  width: auto;
 }
 
 .info-table td:not(:last-child) {
@@ -3302,7 +3316,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .place-map {
   margin-top: 8px;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 264px;
   overflow: hidden;
   border-radius: 16px;
   font-size: 0;
@@ -3312,6 +3326,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .common-info .excurs-location {
@@ -3325,6 +3340,62 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   top: 4px;
 }
 
+.common-inf-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2D3161;
+}
+
+.book-on {
+  padding: 24px;
+  width: 100%;
+  border: 2px solid #443296;
+  border-radius: 16px;
+}
+
+.book-on .head-book {
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D3161;
+}
+
+.book-table {
+  margin-top: 16px;
+  padding: 16px 0;
+  width: 100%;
+  border-spacing: 0 8px;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.book-table td,
+.book-table span {
+  width: 50%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2D3161;
+  vertical-align: top;
+}
+
+.book-table span {
+  width: auto;
+}
+
+.book-table .card-reviews {
+  margin-left: 8px;
+}
+
+.book-table .card-stars, 
+.book-table .card-reviews{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #2D3161;
+}
 
 @media screen and (min-width: 768px){
   .main-content {
