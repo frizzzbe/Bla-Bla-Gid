@@ -3605,6 +3605,12 @@ table td.table-icon {
   top: 3px;
 }
 
+.full-route .info-table td:not(:last-child) {
+  padding-right: 23px;
+  font-weight: 600;
+  min-width: 120px;
+}
+
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
