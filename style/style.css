@@ -3397,6 +3397,45 @@ table td.table-icon {
   color: #2D3161;
 }
 
+.book-table.book-price {
+  padding: 0;
+  border: none;
+}
+
+.book-price .item-price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #443296;
+  vertical-align: middle;
+}
+
+.book-price .item-count {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #443296;
+  vertical-align: middle;
+}
+
+.price-row .item-price {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2D3161;  
+  vertical-align: middle;
+}
+
+.price-row .item-pos {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2D3161;  
+  vertical-align: middle;
+}
+
+
+
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
