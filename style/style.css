@@ -962,6 +962,10 @@ input[type="radio"]:checked + label {
   gap: 0 30px;
 }
 
+.key-block-split--gap {
+  gap: 30px;
+}
+
 .key-split-item {
   flex-grow: 1;
   flex-basis: 250px; /* 308 */
@@ -2973,6 +2977,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .card-stats {
   margin-top: 8px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-reviews {
+  margin-left: 0;
 }
 
 .card-title {
@@ -2998,6 +3008,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-left: 45px;
   gap: 4px;
   cursor: pointer;
+}
+
+.card-stats-sm .card-reviews {
+  margin-left: 0;
 }
 
 .card-stars {
@@ -3280,6 +3294,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .info-table {
+  margin-top: 24px;
   border-spacing: 0 8px;
 }
 
@@ -3349,6 +3364,7 @@ table td.table-icon {
 
 .book-on {
   padding: 24px;
+  padding-top: 8px;
   width: 100%;
   border: 2px solid #443296;
   border-radius: 16px;
@@ -3366,7 +3382,7 @@ table td.table-icon {
   margin-top: 16px;
   padding: 16px 0;
   width: 100%;
-  border-spacing: 0 8px;
+  border-spacing: 0 5px;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -3434,7 +3450,79 @@ table td.table-icon {
   vertical-align: middle;
 }
 
+.book-on .row-input {
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
 
+.book-on .row-item {
+  min-width: 156px;
+  width: 44%;
+  flex-grow: 1;
+}
+
+.book-on .btn-send {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.book-info-desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3161;
+}
+
+.book-info-desc b {
+  font-weight: 700;
+}
+
+.ask-gid {
+  margin-top: 29px;
+  padding: 24px 16px;
+  background-color: #FBFBFF;
+  border-radius: 16px;
+}
+
+.ask-gid .guide-info {
+  margin: 0;
+}
+
+.ask-gid .btn-invert {
+  padding: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #2D3161;
+}
+
+.gid-excursies {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  color: #443296;
+}
+
+.ask-gid .row {
+  flex-wrap: wrap;
+}
+
+.ask-gid .item-excursies {
+  min-width: 154px;
+  flex-grow: 1;
+}
+
+.guide-description {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #171932;
+}
 
 @media screen and (min-width: 768px){
   .main-content {
