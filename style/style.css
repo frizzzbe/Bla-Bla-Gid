@@ -3147,6 +3147,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .slider-body {
   position: relative;
+  font-size: 0;
 }
 
 .slider-main {
@@ -3516,12 +3517,92 @@ table td.table-icon {
   flex-grow: 1;
 }
 
+.item-excursies .btn-invert {
+  width: 100%;
+  max-width: 158px;
+  justify-content: center;
+}
+
 .guide-description {
   margin-top: 16px;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
   color: #171932;
+}
+
+.full-route .excurs-days::before {
+  display: none;
+}
+
+.full-route .excurs-day {
+  padding-left: 0;
+}
+
+.full-route .excurs-name {
+  padding-left: 24px;
+}
+
+.excurs-day--point::before {
+  border-radius: 0;
+  background-color: transparent;
+  background: url('../img/exc-location.svg') no-repeat center;
+  background-size: cover;
+}
+
+.excurs-day--point-end::before {
+  background: url('../img/nav-flag.svg') no-repeat center;
+  background-size: cover;
+}
+
+.excurs-day-content {
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.excurs-day-gallery {
+  /* width: 330px;
+  flex-shrink: 0;
+  flex-grow: 1; */
+  
+  width: 330px;
+  margin: 0 auto;
+}
+
+.excurs-day-gallery .slider-items .slider-item {
+  width: 50px;
+  height: 50px;
+}
+
+.excurs-day-gallery .slider-items.offer-tags {
+  margin-top: 11px;
+}
+
+.excurs-day-gallery .slider-left, 
+.excurs-day-gallery .slider-right {
+  width: 20px;
+  height: 20px;
+}
+
+.excurs-day-description {
+  width: 49%;
+  flex-grow: 1;
+}
+
+
+.full-route .excurs-location {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171932;
+}
+
+.full-route .excurs-location::before {
+  top: 3px;
 }
 
 @media screen and (min-width: 768px){
