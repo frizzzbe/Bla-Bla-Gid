@@ -3611,6 +3611,136 @@ table td.table-icon {
   min-width: 120px;
 }
 
+.month-scroll {
+  gap: 16px;
+  margin-top: 16px;
+  padding-bottom: 8px;
+}
+
+.schedule-month {
+  width: 116px;
+  height: 64px;
+  
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+
+  color: #2D3161;
+  border: 1px solid #2D3161;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.schedule-month--active {
+  padding: 8px;
+  color: #FFFFFF;
+  background-color: #2D3161;
+}
+
+.exc-schedule .norm-heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2D3161;
+}
+
+h3.sub-month {
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D3161;
+}
+
+.shedule-tour {
+  margin-top: 16px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.shedule-tour > .tour-col {
+  flex-grow: 1;
+}
+
+.shedule-tour-wrap {
+  display: flex;
+  width: 38%;
+  flex-grow: 1;
+  min-width: 220px;
+  justify-content: space-between;
+}
+
+.exc-schedule .tour-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+}
+
+.exc-schedule .tour-sign {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;
+}
+
+.exc-schedule .tour-col-price {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-direction: column;
+  justify-content: center; */
+}
+
+.exc-schedule .tour-date,
+.exc-schedule .tour-time {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #171932;
+}
+
+.tour-price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #443296;
+}
+
+.tour-col .btn-send {
+  width: 100%;
+}
+
+.exc-schedule .tour-col-buy {
+  max-width: 266px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 400px){
+  .exc-schedule .tour-col-price {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px){
   .main-content {
     width: 100%;
