@@ -3187,7 +3187,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   position: relative;
   margin-top: 20px;
   padding-bottom: 5px;
-  gap: 8px;
+  gap: 4px;
 }
 
 .slider-shadow {
@@ -3205,8 +3205,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .slider-items .slider-item {
   cursor: pointer;
   border-radius: 8px;
-  width: 72px;
-  height: 72px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
 }
 
@@ -3616,6 +3616,7 @@ table td.table-icon {
   gap: 16px;
   margin-top: 16px;
   padding-bottom: 8px;
+  margin-right: -4.6%;
 }
 
 .schedule-month {
@@ -3937,10 +3938,52 @@ h3.sub-month {
   margin-top: 8px;
 }
 
+.exc-schedule > .btn {
+  margin-top: 16px;
+}
+
+.exc-schedule > .btn img {
+  margin-right: 8px;
+}
+
+.book-mob-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.mob-info-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-mob-cont .book-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #443296;
+}
+
+.book-mob-cont .btn-send {
+  margin: 0;
+  padding: 9px 30px;
+  max-width: 235px;
+  flex-grow: 1;
+}
+
 @media screen and (min-width: 400px){
   .exc-schedule .tour-col-price {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .month-scroll {
+    margin-right: auto;
   }
 }
 
@@ -4049,6 +4092,19 @@ h3.sub-month {
 
   .main-content-card .norm-card {
     margin-top: 32px;
+  }
+
+  .slider-items.offer-tags {
+    gap: 8px;
+  }
+
+  .slider-items .slider-item {
+    width: 72px;
+    height: 72px;
+  }
+
+  .book-mob-cont {
+    display: none;
   }
 }
 
