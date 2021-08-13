@@ -3959,7 +3959,13 @@ h3.sub-month {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+}
+
+.mob-info-book .card-stars {
+  font-size: 12px;
+  line-height: 22px;
+  color: #171932;
 }
 
 .book-mob-cont .book-price {
