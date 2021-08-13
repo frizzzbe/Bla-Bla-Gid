@@ -3742,7 +3742,6 @@ h3.sub-month {
 }
 
 .tour-rate {
-  margin-top: 16px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -3777,8 +3776,9 @@ h3.sub-month {
 .reviews-head {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
+  margin-top: 16px;
   gap: 32px;
 }
 
@@ -3786,6 +3786,7 @@ h3.sub-month {
   padding-left: 30px;
   margin-top: 0;
   gap: 4px;
+  cursor: pointer;
 }
 
 .reviews-head input[type="checkbox"] + label::before {
@@ -3805,6 +3806,7 @@ h3.sub-month {
   height: 16px;
   background: url('../img/Star-gray.svg') no-repeat center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .star--checked {
