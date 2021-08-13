@@ -2502,7 +2502,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .offer-body {
   padding: 16px;
-  padding-bottom: 44px;
+  padding-bottom: 24px;
 }
 
 .offer-item img {
@@ -3782,11 +3782,18 @@ h3.sub-month {
   gap: 32px;
 }
 
-.reviews-head input[type="checkbox"] + label {
+.reviews-head input[type="checkbox"] + label,
+.stars {
+  display: flex;
   padding-left: 30px;
   margin-top: 0;
   gap: 4px;
   cursor: pointer;
+}
+
+.stars {
+  padding-left: 0;
+  margin-top: 0;
 }
 
 .reviews-head input[type="checkbox"] + label::before {
@@ -3820,6 +3827,114 @@ h3.sub-month {
   line-height: 22px;
   color: #171932;
   margin-left: 4px;
+}
+
+.tour-comment {
+  padding: 24px;
+  margin-top: 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+
+.user-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #DBDFFA;
+  border-radius: 50%;
+}
+
+.user-pic img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.user-data {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-person,
+.user-log {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.user-person {
+  gap: 32px;
+}
+
+.user-log {
+  gap: 16px;
+}
+
+.user-name {
+  font-size: 14px;
+  line-height: 22px;
+  color: #171932;
+}
+
+.log-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;
+}
+
+.log-date {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;  
+}
+
+.comment-text {
+  margin-top: 21px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171932;
+}
+
+.comment-more {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  color: #443296;
+}
+
+.guid-reply {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.guid-reply h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #443296;
+}
+
+.guid-reply .guid-status {
+  margin-top: 6px;
+}
+
+.guid-reply .comment-text {
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 400px){
