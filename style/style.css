@@ -145,7 +145,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   height: 26px;
   margin-top: 8px;
   padding-left: 32px;
@@ -3643,7 +3644,9 @@ table td.table-icon {
   background-color: #2D3161;
 }
 
-.exc-schedule .norm-heading {
+.exc-schedule .norm-heading,
+.exc-reviews .norm-heading,
+.exc-reviews .norm-heading span{
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -3682,6 +3685,10 @@ h3.sub-month {
   flex-grow: 1;
   min-width: 220px;
   justify-content: space-between;
+
+  /* max-width: 340px;
+  flex-basis: 100%;
+  min-width: 220px; */
 }
 
 .exc-schedule .tour-col {
@@ -3732,6 +3739,85 @@ h3.sub-month {
 .exc-schedule .tour-col-buy {
   max-width: 266px;
   margin: 0 auto;
+}
+
+.tour-rate {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.tour-rate p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #171932;
+}
+
+.tour-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #171932;
+}
+
+.tour-description {
+  margin-top: 9px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171932;
+}
+
+.reviews-head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.reviews-head input[type="checkbox"] + label {
+  padding-left: 30px;
+  margin-top: 0;
+  gap: 4px;
+}
+
+.reviews-head input[type="checkbox"] + label::before {
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  background-size: 11px;
+}
+
+.reviews-info {
+  max-width: 260px;
+}
+
+.star {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('../img/Star-gray.svg') no-repeat center;
+  background-size: cover;
+}
+
+.star--checked {
+  background: url('../img/Star.svg') no-repeat center;
+  background-size: cover;
+}
+
+.star-filter-count {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  color: #171932;
+  margin-left: 4px;
 }
 
 @media screen and (min-width: 400px){
